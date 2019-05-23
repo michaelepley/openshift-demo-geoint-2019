@@ -1,0 +1,5 @@
+See 
+
+- https://access.redhat.com/documentation/en-us/red_hat_codeready_workspaces/1.1/html/administration_guide/installing_codeready-workspaces#running-the-codeready-workspaces-deployment-script
+- https://developers.redhat.com/products/codeready-workspaces/getting-started/?tcWhenSigned=December+6%2C+2018&tcWhenEnds=December+6%2C+2019&tcEndsIn=197&tcDuration=364&tcDownloadFileName=codeready-workspaces-1.1.0.GA-operator-installer.tar.gz&tcRedirect=5000&tcSrcLink=https%3A%2F%2Fdevelopers.redhat.com%2Fdownload-manager%2Fcontent%2Forigin%2Ffiles%2Fsha256%2F0e%2F0e3dced83027d85642fef16791f06f20a28e2a7a89f83dd98539eca769263491%2Fcodeready-workspaces-1.1.0.GA-operator-installer.tar.gz&p=CodeReady+Workspaces&pv=1.1.0&tcDownloadURL=https%3A%2F%2Faccess.cdn.redhat.com%2Fcontent%2Forigin%2Ffiles%2Fsha256%2F0e%2F0e3dced83027d85642fef16791f06f20a28e2a7a89f83dd98539eca769263491%2Fcodeready-workspaces-1.1.0.GA-operator-installer.tar.gz%3F_auth_%3D1558534616_b74717389214f8e60049fef577a239ea
+- https://developers.redhat.com/crw-hw/

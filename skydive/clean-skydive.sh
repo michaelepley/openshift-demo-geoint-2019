@@ -11,6 +11,8 @@ popd
 # Additional Configuration
 APPLICATION_NAME=skydive
 OPENSHIFT_PROJECT=demo-skydive
+OPENSHIFT_PROJECTS_TO_CLEAN=(${OPENSHIFT_PROJECT}) 
+
 
 echo -n "Verifying configuration ready..."
 : ${DEMO_INTERACTIVE?}
@@ -33,18 +35,26 @@ pushd ../config >/dev/null 2>&1
 popd >/dev/null 2>&1
 
 
-echo "Create SKYDIVE demo"
+echo "Clean SKYDIVE demo"
 
-# analyzer and agent run as privileged container
-oc adm policy add-scc-to-user privileged -z default
-# analyzer need cluster-reader access get all informations from the cluster
-oc adm policy add-cluster-role-to-user cluster-reader -z default
 
-# oc create -f https://raw.githubusercontent.com/skydive-project/skydive/master/contrib/kubernetes/skydive.yaml
-#
-VERSION=master
-oc process -f https://raw.githubusercontent.com/skydive-project/skydive/${VERSION}/contrib/openshift/skydive-template.yaml | oc apply -f -
+for OPENSHIFT_PROJECT_TO_CLEAN in ${OPENSHIFT_PROJECTS_TO_CLEAN[*]} ; do
+	echo "	--> cleaning project ${OPENSHIFT_PROJECT_TO_CLEAN}"
+	echo -n "		--> delete all openshift resources for application ${APPLICATION_NAME}..."
+	oc delete all --all -n ${OPENSHIFT_PROJECT_TO_CLEAN}
+	
+	echo -n "	--> delete miscellaneous artifacts (including templates, but leave jenkins alone)..."
+	OPENSHIFT_PROJECT_MISC_RESOURCES=(`oc get all,templates -n ${OPENSHIFT_PROJECT_TO_CLEAN} | grep -v '^NAME' | grep -v jenkins | awk '{ printf $1 " "; }' `)
+	: ${OPENSHIFT_PROJECT_MISC_RESOURCES:-oc delete ${OPENSHIFT_PROJECT_MISC_RESOURCES} -n ${OPENSHIFT_PROJECT_TO_CLEAN} }
 
-oc expose svc/skydive-analyzer
+	echo "		--> optionally delete the project ... delete the project with 'oc delete project ${OPENSHIFT_PROJECT_TO_CLEAN} '"
+	
+done
 
-echo "Done."
+echo "	--> delete all local artifacts"
+
+echo "	--> deleting all local resources"
+echo "		--> NOTE: nothing to do"
+[[ -n ${NAUTICALCHART_FORKED_APPLICATION_REPOSITORY_LOCAL} && "x/" -ne "${NAUTICALCHART_FORKED_APPLICATION_REPOSITORY_LOCAL}" ]] && rm -rf ${NAUTICALCHART_FORKED_APPLICATION_REPOSITORY_LOCAL}
+
+echo "Done"
