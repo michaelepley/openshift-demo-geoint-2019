@@ -5,19 +5,19 @@ metadata: {}
 items:
   - apiVersion: v1
     kind: Template
-    template: oshinko-rest
+    template: oshinko-cli
     metadata:
-      name: oshinko-rest
+      name: oshinko-cli
       annotations:
-        description: Launch the Oshinko Apache Spark cluster management Rest API server.
-        openshift.io/display-name: Oshinko Rest endpoints
+        description: Launch the Oshinko Apache Spark cluster management CLI server.
+        openshift.io/display-name: Oshinko CLI
     objects:
       - kind: Service
         apiVersion: v1
         metadata:
-          name: ${OSHINKO_REST_NAME}-proxy
+          name: ${OSHINKO_CLI_NAME}-proxy
           labels:
-            name: ${OSHINKO_REST_NAME}-proxy
+            name: ${OSHINKO_CLI_NAME}-proxy
         spec:
           ports:
           - name: oc-proxy-port
@@ -25,13 +25,13 @@ items:
             port: 8001
             targetPort: 8001
           selector:
-            name: ${OSHINKO_REST_NAME}
+            name: ${OSHINKO_CLI_NAME}
       - kind: Service
         apiVersion: v1
         metadata:
-          name: ${OSHINKO_REST_NAME}
+          name: ${OSHINKO_CLI_NAME}
           labels:
-            name: ${OSHINKO_REST_NAME}
+            name: ${OSHINKO_CLI_NAME}
         spec:
           ports:
             - name: o-web-port
@@ -39,24 +39,24 @@ items:
               port: 8080
               targetPort: 8080
           selector:
-            name: ${OSHINKO_REST_NAME}
+            name: ${OSHINKO_CLI_NAME}
       - kind: Route
         apiVersion: v1
         metadata:
-          name: ${OSHINKO_REST_NAME}
+          name: ${OSHINKO_CLI_NAME}
         spec:
-          host: ${OSHINKO_REST_ROUTE_HOSTNAME}
+          host: ${OSHINKO_CLI_ROUTE_HOSTNAME}
           path: /
           to:
             kind: Service
-            name: ${OSHINKO_REST_NAME}
+            name: ${OSHINKO_CLI_NAME}
           alternateBackends:
             - kind: Service
-              name: ${OSHINKO_REST_NAME}
+              name: ${OSHINKO_CLI_NAME}
       - kind: DeploymentConfig
         apiVersion: v1
         metadata:
-          name: ${OSHINKO_REST_NAME}
+          name: ${OSHINKO_CLI_NAME}
         spec:
           strategy:
             type: Rolling
@@ -64,15 +64,15 @@ items:
             - type: ConfigChange
           replicas: 1
           selector:
-            name: ${OSHINKO_REST_NAME}
+            name: ${OSHINKO_CLI_NAME}
           template:
             metadata:
               labels:
-                name: ${OSHINKO_REST_NAME}
+                name: ${OSHINKO_CLI_NAME}
             spec:
               containers:
-                - name: ${OSHINKO_REST_NAME}
-                  image: ${OSHINKO_REST_IMAGE}
+                - name: ${OSHINKO_CLI_NAME}
+                  image: ${OSHINKO_CLI_IMAGE}
                   imagePullPolicy: Always
                   ports:
                     - name: o-web-port
@@ -80,13 +80,13 @@ items:
                       protocol: TCP
                   env:
                     - name: OSHINKO_CLUSTER_NAMESPACE
-                      value: ${OSHINKO_CLUSTER_NAMESPACE}
+                      valeu: ${OSHINKO_CLUSTER_NAMESPACE}
                     - name: SPARK_DEFAULT
                       value: ${SPARK_DEFAULT}
                     - name: OSHINKO_REFRESH_INTERVAL
                       value: ${OSHINKO_REFRESH_INTERVAL}
                     - name: WEB_ROUTE_NAME
-                      value: ${OSHINKO_REST_NAME}
+                      value: ${OSHINKO_CLI_NAME}
                     - name: INSECURE_WEBUI
                       value: "true"
                     - name: CURRENT_NAMESPACE
@@ -118,18 +118,18 @@ items:
       - name: SPARK_DEFAULT
         description: Full name of the spark image to use when creating clusters
         required: false
-      - name: OSHINKO_REST_NAME
-        description: Name of the oshinko web service
-        value: "oshinko-rest"
-      - name: OSHINKO_REST_IMAGE
+      - name: OSHINKO_CLI_NAME
+        description: Name of the oshinko c;i service
+        value: "oshinko-cli"
+      - name: OSHINKO_CLI_IMAGE
         description: Full name of the oshinko web image
         required: true
-        value: radanalyticsio/oshinko-rest:stable
+        value: radanalyticsio/oshinko-cli:stable
       - name: OSHINKO_WEB_IMAGE
         description: Full name of the oshinko web image
         required: true
         value: radanalyticsio/oshinko-webui:stable
-      - name: OSHINKO_REST_ROUTE_HOSTNAME
+      - name: OSHINKO_CLI_ROUTE_HOSTNAME
         description: The hostname used to create the external route for the webui
       - name: OSHINKO_REFRESH_INTERVAL
         value: "5"

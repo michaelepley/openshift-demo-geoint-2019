@@ -1,0 +1,1 @@
+{"clusters":[{"href":"/clusters/mysparkcluster","masterUrl":"spark://mysparkcluster:7077","masterWebUrl":"http://mysparkcluster-ui:8080","name":"mysparkcluster","status":"Running","workerCount":1},{"href":"/clusters/pi-demo-2","masterUrl":"spark://pi-demo-2:7077","masterWebUrl":"http://pi-demo-2-ui:8080","name":"pi-demo-2","status":"Running","workerCount":3}]}

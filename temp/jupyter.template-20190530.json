@@ -1,0 +1,107 @@
+{
+    "kind": "Template",
+    "apiVersion": "template.openshift.io/v1",
+    "metadata": {
+        "name": "jupyter-template",
+        "creationTimestamp": null
+    },
+    "objects": [
+        {
+            "kind": "Route",
+            "apiVersion": "route.openshift.io/v1",
+            "metadata": {
+                "name": "jupyter",
+                "creationTimestamp": null,
+                "labels": {
+                    "app": "jupyter"
+                },
+                "annotations": {
+                    "openshift.io/host.generated": "true"
+                }
+            },
+            "spec": {
+                "host": "jupyter-jupyter.apps.geoint2019.redhatgov.io",
+                "to": {
+                    "kind": "Service",
+                    "name": "jupyter",
+                    "weight": 100
+                },
+                "port": {
+                    "targetPort": "jupyter"
+                },
+                "wildcardPolicy": "None"
+            },
+            "status": {
+                "ingress": [
+                    {
+                        "host": "jupyter-jupyter.apps.geoint2019.redhatgov.io",
+                        "routerName": "router",
+                        "conditions": [
+                            {
+                                "type": "Admitted",
+                                "status": "True",
+                                "lastTransitionTime": "2019-05-29T01:56:45Z"
+                            }
+                        ],
+                        "wildcardPolicy": "None"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "Service",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "glusterfs-dynamic-eed89251-81b4-11e9-8702-0eb74ed9578e",
+                "creationTimestamp": null,
+                "labels": {
+                    "gluster.kubernetes.io/provisioned-for-pvc": "jupyter-pv-claim"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "protocol": "TCP",
+                        "port": 1,
+                        "targetPort": 1
+                    }
+                ],
+                "type": "ClusterIP",
+                "sessionAffinity": "None"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "kind": "Service",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "jupyter",
+                "creationTimestamp": null,
+                "labels": {
+                    "app": "jupyter"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "jupyter",
+                        "protocol": "TCP",
+                        "port": 8888,
+                        "targetPort": 8888
+                    }
+                ],
+                "selector": {
+                    "app": "jupyter"
+                },
+                "clusterIP": "None",
+                "type": "ClusterIP",
+                "sessionAffinity": "None"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        }
+    ]
+}

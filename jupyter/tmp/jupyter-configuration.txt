@@ -1,0 +1,13 @@
+sh-4.2$ cd /home/nbuser/.jupyter
+sh-4.2$ ls
+jupyter_notebook_config.py
+sh-4.2$ cat jupyter_notebook_config.py
+c.NotebookApp.ip = '*'
+c.NotebookApp.open_browser = False
+c.NotebookApp.notebook_dir = '/notebooks'
+c.NotebookApp.password = u'sha1:5b35f7d9c678:d910596eb3b825f633befaa7a079f753d0ed44d0'
+
+# create sha1 password: echo 'password1!' | openssl sha1
+# see https://jupyter-notebook.readthedocs.io/en/stable/frontend_config.html#frontend-config
+
+/home/nbuser/.jupyter/{common,notebook,tree,editor}.json

@@ -8,7 +8,10 @@ pushd ..
 popd
 
 # Additional Configuration
-OPENSHIFT_PROJECT=demo-codeready
+APPLICATION_NAME=code-ready-workspaces
+OPENSHIFT_PROJECT=workspaces
+APPLICATION_CODE_READY_WORKSPACES_LOCAL_INSTALLER=codeready-workspaces-1.1.0.GA-operator-installer.tar.gz
+APPLICATION_CODE_READY_WORKSPACES_LOCAL_INSTALLER_DIR=codeready-workspaces-operator-installer
 
 echo -n "Verifying configuration ready..."
 : ${DEMO_INTERACTIVE?}
@@ -31,11 +34,14 @@ popd >/dev/null 2>&1
 #TODO: attempt to automate download from https://developers.redhat.com/download-manager/file/codeready-workspaces-1.1.0.GA-operator-installer.tar.gz ...may require authentication
 # something like: wget --user=mepley-se-jboss --password='password'  https://developers.redhat.com/download-manager/file/codeready-workspaces-1.1.0.GA-operator-installer.tar.gz
 
-[[ -f codeready-workspaces-1.1.0.GA-operator-installer.tar.gz ]] || { echo "FAILED: could not find installer" && exit 1 ; } 
-tar xvf codeready-workspaces-1.1.0.GA-operator-installer.tar.gz && cd codeready-workspaces-operator-installer/
+[[ -f ${APPLICATION_CODE_READY_WORKSPACES_LOCAL_INSTALLER} ]] || { echo "FAILED: could not find installer...you may need to download this from https://developers.redhat.com/download-manager/file/codeready-workspaces-1.1.0.GA-operator-installer.tar.gz" && exit 1 ; } 
+tar xvf ${APPLICATION_CODE_READY_WORKSPACES_LOCAL_INSTALLER}
+
+pushd ${APPLICATION_CODE_READY_WORKSPACES_LOCAL_INSTALLER_DIR}
 
 ./deploy.sh --deploy --public-certs
 
+popd
 
 echo "Done."
 

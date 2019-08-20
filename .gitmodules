@@ -1,3 +1,6 @@
 [submodule "config"]
 	path = config
 	url = https://github.com/michaelepley/openshift-demo-setup.git
+[submodule "codeready/sample-apps/kitchensink"]
+	path = codeready/sample-apps/kitchensink
+	url = https://github.com/michaelepley/openshift-demo-codreready-kitchensink-example.git

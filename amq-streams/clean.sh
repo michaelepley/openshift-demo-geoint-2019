@@ -9,10 +9,10 @@ pushd ..
 popd
 
 # Additional Configuration
-APPLICATION_NAME=skydive
-OPENSHIFT_PROJECT=demo-skydive
-APPLICATION_SKYDIVE_LOCAL_INSTALLER=DOESNOTEXIST
-APPLICATION_SKYDIVE_STREAMS_LOCAL_INSTALLER_DIR=DOESNOTEXIST
+APPLICATION_NAME=amq-streams
+OPENSHIFT_PROJECT=demo-amq-streams
+APPLICATION_AMQ_STREAMS_LOCAL_INSTALLER=amq-streams-1.1.0-ocp-install-examples.zip
+APPLICATION_AMQ_STREAMS_LOCAL_INSTALLER_DIR=amq-streams-installer
 
 OPENSHIFT_PROJECTS_TO_CLEAN=(${OPENSHIFT_PROJECT}) 
 
@@ -24,22 +24,19 @@ echo -n "Verifying configuration ready..."
 : ${OPENSHIFT_USER_REFERENCE?}
 : ${OPENSHIFT_PROJECT?}
 : ${APPLICATION_NAME?}
+: ${APPLICATION_AMQ_STREAMS_LOCAL_INSTALLER?}
+: ${APPLICATION_AMQ_STREAMS_LOCAL_INSTALLER_DIR?}
 echo "OK"
 
-echo "Skydive Configuration________________________________________________"
-echo "	OPENSHIFT_USER_REFERENCE             = ${OPENSHIFT_USER_REFERENCE}"
-echo "	OPENSHIFT_PROJECT                    = ${OPENSHIFT_PROJECT}"
-echo "	APPLICATION_NAME                     = ${APPLICATION_NAME}"
+echo "AMQ Streams Configuration____________________________________________"
+echo "	OPENSHIFT_USER_REFERENCE                     = ${OPENSHIFT_USER_REFERENCE}"
+echo "	OPENSHIFT_PROJECT                            = ${OPENSHIFT_PROJECT}"
+echo "	APPLICATION_NAME                             = ${APPLICATION_NAME}"
+echo "	APPLICATION_AMQ_STREAMS_LOCAL_INSTALLER      = ${APPLICATION_AMQ_STREAMS_LOCAL_INSTALLER}"
+echo "	APPLICATION_AMQ_STREAMS_LOCAL_INSTALLER_DIR  = ${APPLICATION_AMQ_STREAMS_LOCAL_INSTALLER_DIR}"
 echo "_____________________________________________________________________"
 
-echo "	--> Make sure we are logged in (to the right instance and as the right user)"
-pushd ../config >/dev/null 2>&1
-. ./setup-login.sh -r OPENSHIFT_USER_REFERENCE -n ${OPENSHIFT_PROJECT} || { echo "FAILED: Could not login" && exit 1; }
-popd >/dev/null 2>&1
-
-
-echo "Clean SKYDIVE demo"
-
+echo "Clean AMQ Streams demo"
 
 for OPENSHIFT_PROJECT_TO_CLEAN in ${OPENSHIFT_PROJECTS_TO_CLEAN[*]} ; do
 	echo "	--> cleaning project ${OPENSHIFT_PROJECT_TO_CLEAN}"
@@ -55,12 +52,15 @@ for OPENSHIFT_PROJECT_TO_CLEAN in ${OPENSHIFT_PROJECTS_TO_CLEAN[*]} ; do
 done
 
 ## SANITY CHECK
-realpath ${APPLICATION_SKYDIVE_STREAMS_LOCAL_INSTALLER_DIR} | grep "^/home/.*/git" || { echo "FAILED: REFUSING TO DELETE UNSAFE LOCATIONS" && exit 1 ; } 
-
+! echo ${APPLICATION_AMQ_STREAMS_LOCAL_INSTALLER_DIR} | grep "^/" && realpath ${APPLICATION_AMQ_STREAMS_LOCAL_INSTALLER_DIR} | grep "^/home/.*/git" || { echo "FAILED: REFUSING TO DELETE UNSAFE LOCATIONS" && exit 1 ; } 
 
 echo "	--> delete all local artifacts"
 
 echo "	--> deleting all local resources"
 echo "		--> NOTE: nothing to do"
+[[ -n ${APPLICATION_AMQ_STREAMS_LOCAL_INSTALLER_DIR} ]] && [ "/" != "${APPLICATION_AMQ_STREAMS_LOCAL_INSTALLER_DIR}" ] && rm -rf ${APPLICATION_AMQ_STREAMS_LOCAL_INSTALLER_DIR}
 
-echo "Done"
+
+echo "Done."
+
+

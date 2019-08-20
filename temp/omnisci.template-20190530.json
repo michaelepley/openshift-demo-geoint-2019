@@ -1,0 +1,118 @@
+{
+    "kind": "Template",
+    "apiVersion": "template.openshift.io/v1",
+    "metadata": {
+        "name": "omni-sci-template",
+        "creationTimestamp": null
+    },
+    "objects": [
+        {
+            "kind": "Route",
+            "apiVersion": "route.openshift.io/v1",
+            "metadata": {
+                "name": "mapd",
+                "creationTimestamp": null,
+                "labels": {
+                    "app": "mapd"
+                },
+                "annotations": {
+                    "openshift.io/host.generated": "true"
+                }
+            },
+            "spec": {
+                "host": "mapd-omnisci.apps.geoint2019.redhatgov.io",
+                "to": {
+                    "kind": "Service",
+                    "name": "mapd",
+                    "weight": 100
+                },
+                "port": {
+                    "targetPort": "mapd"
+                },
+                "wildcardPolicy": "None"
+            },
+            "status": {
+                "ingress": [
+                    {
+                        "host": "mapd-omnisci.apps.geoint2019.redhatgov.io",
+                        "routerName": "router",
+                        "conditions": [
+                            {
+                                "type": "Admitted",
+                                "status": "True",
+                                "lastTransitionTime": "2019-05-28T13:17:13Z"
+                            }
+                        ],
+                        "wildcardPolicy": "None"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "Service",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "glusterfs-dynamic-5a6cabfd-814a-11e9-8702-0eb74ed9578e",
+                "creationTimestamp": null,
+                "labels": {
+                    "gluster.kubernetes.io/provisioned-for-pvc": "mapd-pv-claim"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "protocol": "TCP",
+                        "port": 1,
+                        "targetPort": 1
+                    }
+                ],
+                "type": "ClusterIP",
+                "sessionAffinity": "None"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "kind": "Service",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "mapd",
+                "creationTimestamp": null,
+                "labels": {
+                    "app": "mapd"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "mapd",
+                        "protocol": "TCP",
+                        "port": 6273,
+                        "targetPort": 6273
+                    }
+                ],
+                "selector": {
+                    "app": "mapd"
+                },
+                "clusterIP": "None",
+                "type": "ClusterIP",
+                "sessionAffinity": "None"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "kind": "ConfigMap",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "omnisci-config",
+                "creationTimestamp": null
+            },
+            "data": {
+                "omnisci.conf": "port = 6274\nhttp-port = 6278\ncalcite-port = 6279\ndata = \"/omnisci-storage/data\"\nread-only = false\nverbose = false\n\n[web]\nport = 6273\nfrontend = \"frontend\""
+            }
+        }
+    ]
+}

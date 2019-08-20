@@ -1,0 +1,107 @@
+{
+    "kind": "Template",
+    "apiVersion": "template.openshift.io/v1",
+    "metadata": {
+        "name": "rshiny-template",
+        "creationTimestamp": null
+    },
+    "objects": [
+        {
+            "kind": "Route",
+            "apiVersion": "route.openshift.io/v1",
+            "metadata": {
+                "name": "rshiny",
+                "creationTimestamp": null,
+                "labels": {
+                    "app": "rshiny"
+                },
+                "annotations": {
+                    "openshift.io/host.generated": "true"
+                }
+            },
+            "spec": {
+                "host": "rshiny-rshiny.apps.geoint2019.redhatgov.io",
+                "to": {
+                    "kind": "Service",
+                    "name": "rshiny",
+                    "weight": 100
+                },
+                "port": {
+                    "targetPort": "rshiny"
+                },
+                "wildcardPolicy": "None"
+            },
+            "status": {
+                "ingress": [
+                    {
+                        "host": "rshiny-rshiny.apps.geoint2019.redhatgov.io",
+                        "routerName": "router",
+                        "conditions": [
+                            {
+                                "type": "Admitted",
+                                "status": "True",
+                                "lastTransitionTime": "2019-05-28T15:18:07Z"
+                            }
+                        ],
+                        "wildcardPolicy": "None"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "Service",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "glusterfs-dynamic-7cc506b6-815b-11e9-8702-0eb74ed9578e",
+                "creationTimestamp": null,
+                "labels": {
+                    "gluster.kubernetes.io/provisioned-for-pvc": "rshiny-pv-claim"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "protocol": "TCP",
+                        "port": 1,
+                        "targetPort": 1
+                    }
+                ],
+                "type": "ClusterIP",
+                "sessionAffinity": "None"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "kind": "Service",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "rshiny",
+                "creationTimestamp": null,
+                "labels": {
+                    "app": "rshiny"
+                }
+            },
+            "spec": {
+                "ports": [
+                    {
+                        "name": "rshiny",
+                        "protocol": "TCP",
+                        "port": 8787,
+                        "targetPort": 8787
+                    }
+                ],
+                "selector": {
+                    "app": "rshiny"
+                },
+                "clusterIP": "None",
+                "type": "ClusterIP",
+                "sessionAffinity": "None"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        }
+    ]
+}

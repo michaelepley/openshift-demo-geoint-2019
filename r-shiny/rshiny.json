@@ -1,0 +1,788 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "image.openshift.io/v1",
+            "kind": "ImageStream",
+            "metadata": {
+                "annotations": {
+                    "openshift.io/image.dockerRepositoryCheck": "2019-05-20T16:11:11Z"
+                },
+                "creationTimestamp": "2019-05-20T16:11:11Z",
+                "generation": 2,
+                "labels": {
+                    "app": "geogpugeo"
+                },
+                "name": "geogpugeo",
+                "namespace": "rshiny",
+                "resourceVersion": "213769",
+                "selfLink": "/apis/image.openshift.io/v1/namespaces/rshiny/imagestreams/geogpugeo",
+                "uid": "e23c7f27-7b19-11e9-9dea-165f353351b8"
+            },
+            "spec": {
+                "lookupPolicy": {
+                    "local": false
+                },
+                "tags": [
+                    {
+                        "annotations": {
+                            "openshift.io/generated-by": "OpenShiftWebConsole",
+                            "openshift.io/imported-from": "quay.io/danclark/r-geospatial:gpu"
+                        },
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "quay.io/danclark/r-geospatial:gpu"
+                        },
+                        "generation": 2,
+                        "importPolicy": {},
+                        "name": "gpu",
+                        "referencePolicy": {
+                            "type": "Source"
+                        }
+                    }
+                ]
+            },
+            "status": {
+                "dockerImageRepository": "docker-registry.default.svc:5000/rshiny/geogpugeo",
+                "tags": [
+                    {
+                        "items": [
+                            {
+                                "created": "2019-05-20T16:11:11Z",
+                                "dockerImageReference": "quay.io/danclark/r-geospatial@sha256:4976417218f4a023b2afce7d2af896384a9b93369c708d22078a7290dc33b540",
+                                "generation": 2,
+                                "image": "sha256:4976417218f4a023b2afce7d2af896384a9b93369c708d22078a7290dc33b540"
+                            }
+                        ],
+                        "tag": "gpu"
+                    }
+                ]
+            }
+        },
+        {
+            "apiVersion": "image.openshift.io/v1",
+            "kind": "ImageStream",
+            "metadata": {
+                "annotations": {
+                    "openshift.io/image.dockerRepositoryCheck": "2019-05-20T10:14:26Z"
+                },
+                "creationTimestamp": "2019-05-20T10:14:26Z",
+                "generation": 2,
+                "labels": {
+                    "app": "r-gpu"
+                },
+                "name": "r-gpu",
+                "namespace": "rshiny",
+                "resourceVersion": "165312",
+                "selfLink": "/apis/image.openshift.io/v1/namespaces/rshiny/imagestreams/r-gpu",
+                "uid": "0bfa1627-7ae8-11e9-9dea-165f353351b8"
+            },
+            "spec": {
+                "lookupPolicy": {
+                    "local": false
+                },
+                "tags": [
+                    {
+                        "annotations": {
+                            "openshift.io/generated-by": "OpenShiftWebConsole",
+                            "openshift.io/imported-from": "quay.io/danclark/r-geospatial:gpu"
+                        },
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "quay.io/danclark/r-geospatial:gpu"
+                        },
+                        "generation": 2,
+                        "importPolicy": {},
+                        "name": "gpu",
+                        "referencePolicy": {
+                            "type": "Source"
+                        }
+                    }
+                ]
+            },
+            "status": {
+                "dockerImageRepository": "docker-registry.default.svc:5000/rshiny/r-gpu",
+                "tags": [
+                    {
+                        "items": [
+                            {
+                                "created": "2019-05-20T10:14:26Z",
+                                "dockerImageReference": "quay.io/danclark/r-geospatial@sha256:efb8dd6118c791f1ad4cb1b60d6c32936966a9702d34e4f7da428ba1a8873f0f",
+                                "generation": 2,
+                                "image": "sha256:efb8dd6118c791f1ad4cb1b60d6c32936966a9702d34e4f7da428ba1a8873f0f"
+                            }
+                        ],
+                        "tag": "gpu"
+                    }
+                ]
+            }
+        },
+        {
+            "apiVersion": "image.openshift.io/v1",
+            "kind": "ImageStream",
+            "metadata": {
+                "annotations": {
+                    "openshift.io/image.dockerRepositoryCheck": "2019-05-20T15:31:23Z"
+                },
+                "creationTimestamp": "2019-05-20T15:31:23Z",
+                "generation": 2,
+                "labels": {
+                    "app": "rgpu"
+                },
+                "name": "rgpu",
+                "namespace": "rshiny",
+                "resourceVersion": "208335",
+                "selfLink": "/apis/image.openshift.io/v1/namespaces/rshiny/imagestreams/rgpu",
+                "uid": "52f5ef2d-7b14-11e9-9dea-165f353351b8"
+            },
+            "spec": {
+                "lookupPolicy": {
+                    "local": false
+                },
+                "tags": [
+                    {
+                        "annotations": {
+                            "openshift.io/generated-by": "OpenShiftWebConsole",
+                            "openshift.io/imported-from": "quay.io/danclark/r-geospatial:gpu"
+                        },
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "quay.io/danclark/r-geospatial:gpu"
+                        },
+                        "generation": 2,
+                        "importPolicy": {},
+                        "name": "gpu",
+                        "referencePolicy": {
+                            "type": "Source"
+                        }
+                    }
+                ]
+            },
+            "status": {
+                "dockerImageRepository": "docker-registry.default.svc:5000/rshiny/rgpu",
+                "tags": [
+                    {
+                        "items": [
+                            {
+                                "created": "2019-05-20T15:31:23Z",
+                                "dockerImageReference": "quay.io/danclark/r-geospatial@sha256:ffd1b490fae4f10069168bf876db982d3c501de0f6301e4d1c1eee649a16039c",
+                                "generation": 2,
+                                "image": "sha256:ffd1b490fae4f10069168bf876db982d3c501de0f6301e4d1c1eee649a16039c"
+                            }
+                        ],
+                        "tag": "gpu"
+                    }
+                ]
+            }
+        },
+        {
+            "apiVersion": "apps.openshift.io/v1",
+            "kind": "DeploymentConfig",
+            "metadata": {
+                "annotations": {
+                    "openshift.io/generated-by": "OpenShiftWebConsole"
+                },
+                "creationTimestamp": "2019-05-20T16:11:11Z",
+                "generation": 2,
+                "labels": {
+                    "app": "geogpugeo"
+                },
+                "name": "geogpugeo",
+                "namespace": "rshiny",
+                "resourceVersion": "300678",
+                "selfLink": "/apis/apps.openshift.io/v1/namespaces/rshiny/deploymentconfigs/geogpugeo",
+                "uid": "e23ce851-7b19-11e9-9dea-165f353351b8"
+            },
+            "spec": {
+                "replicas": 1,
+                "selector": {
+                    "app": "geogpugeo",
+                    "deploymentconfig": "geogpugeo"
+                },
+                "strategy": {
+                    "activeDeadlineSeconds": 21600,
+                    "resources": {},
+                    "rollingParams": {
+                        "intervalSeconds": 1,
+                        "maxSurge": "25%",
+                        "maxUnavailable": "25%",
+                        "timeoutSeconds": 600,
+                        "updatePeriodSeconds": 1
+                    },
+                    "type": "Rolling"
+                },
+                "template": {
+                    "metadata": {
+                        "annotations": {
+                            "openshift.io/generated-by": "OpenShiftWebConsole"
+                        },
+                        "creationTimestamp": null,
+                        "labels": {
+                            "app": "geogpugeo",
+                            "deploymentconfig": "geogpugeo"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "env": [
+                                    {
+                                        "name": "NVIDIA_DRIVER_CAPABILITES",
+                                        "value": "compute,utility"
+                                    },
+                                    {
+                                        "name": "NVIDIA_VISIBLE_DEVICES",
+                                        "value": "all"
+                                    }
+                                ],
+                                "image": "quay.io/danclark/r-geospatial@sha256:4976417218f4a023b2afce7d2af896384a9b93369c708d22078a7290dc33b540",
+                                "imagePullPolicy": "IfNotPresent",
+                                "name": "geogpugeo",
+                                "ports": [
+                                    {
+                                        "containerPort": 8787,
+                                        "protocol": "TCP"
+                                    }
+                                ],
+                                "resources": {},
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File"
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Always",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {},
+                        "terminationGracePeriodSeconds": 30
+                    }
+                },
+                "test": false,
+                "triggers": [
+                    {
+                        "type": "ConfigChange"
+                    },
+                    {
+                        "imageChangeParams": {
+                            "automatic": true,
+                            "containerNames": [
+                                "geogpugeo"
+                            ],
+                            "from": {
+                                "kind": "ImageStreamTag",
+                                "name": "geogpugeo:gpu",
+                                "namespace": "rshiny"
+                            },
+                            "lastTriggeredImage": "quay.io/danclark/r-geospatial@sha256:4976417218f4a023b2afce7d2af896384a9b93369c708d22078a7290dc33b540"
+                        },
+                        "type": "ImageChange"
+                    }
+                ]
+            },
+            "status": {
+                "availableReplicas": 1,
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2019-05-20T16:11:13Z",
+                        "lastUpdateTime": "2019-05-20T16:13:12Z",
+                        "message": "replication controller \"geogpugeo-1\" successfully rolled out",
+                        "reason": "NewReplicationControllerAvailable",
+                        "status": "True",
+                        "type": "Progressing"
+                    },
+                    {
+                        "lastTransitionTime": "2019-05-21T12:40:59Z",
+                        "lastUpdateTime": "2019-05-21T12:40:59Z",
+                        "message": "Deployment config has minimum availability.",
+                        "status": "True",
+                        "type": "Available"
+                    }
+                ],
+                "details": {
+                    "causes": [
+                        {
+                            "type": "ConfigChange"
+                        }
+                    ],
+                    "message": "config change"
+                },
+                "latestVersion": 1,
+                "observedGeneration": 2,
+                "readyReplicas": 1,
+                "replicas": 1,
+                "unavailableReplicas": 0,
+                "updatedReplicas": 1
+            }
+        },
+        {
+            "apiVersion": "route.openshift.io/v1",
+            "kind": "Route",
+            "metadata": {
+                "creationTimestamp": "2019-05-20T16:11:35Z",
+                "labels": {
+                    "app": "geogpugeo"
+                },
+                "name": "asdsad",
+                "namespace": "rshiny",
+                "resourceVersion": "213852",
+                "selfLink": "/apis/route.openshift.io/v1/namespaces/rshiny/routes/asdsad",
+                "uid": "f0e08708-7b19-11e9-9dea-165f353351b8"
+            },
+            "spec": {
+                "host": "geo.rshiny.apps.geoint.redhatgov.io",
+                "port": {
+                    "targetPort": "8787-tcp"
+                },
+                "to": {
+                    "kind": "Service",
+                    "name": "geogpugeo",
+                    "weight": 100
+                },
+                "wildcardPolicy": "None"
+            },
+            "status": {
+                "ingress": [
+                    {
+                        "conditions": [
+                            {
+                                "lastTransitionTime": "2019-05-20T16:11:35Z",
+                                "status": "True",
+                                "type": "Admitted"
+                            }
+                        ],
+                        "host": "geo.rshiny.apps.geoint.redhatgov.io",
+                        "routerName": "router",
+                        "wildcardPolicy": "None"
+                    }
+                ]
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "metadata": {
+                "annotations": {
+                    "openshift.io/generated-by": "OpenShiftWebConsole"
+                },
+                "creationTimestamp": "2019-05-20T16:11:11Z",
+                "labels": {
+                    "app": "geogpugeo"
+                },
+                "name": "geogpugeo",
+                "namespace": "rshiny",
+                "resourceVersion": "213764",
+                "selfLink": "/api/v1/namespaces/rshiny/services/geogpugeo",
+                "uid": "e23dea1b-7b19-11e9-9dea-165f353351b8"
+            },
+            "spec": {
+                "clusterIP": "172.30.23.125",
+                "ports": [
+                    {
+                        "name": "8787-tcp",
+                        "port": 8787,
+                        "protocol": "TCP",
+                        "targetPort": 8787
+                    }
+                ],
+                "selector": {
+                    "deploymentconfig": "geogpugeo"
+                },
+                "sessionAffinity": "None",
+                "type": "ClusterIP"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "metadata": {
+                "creationTimestamp": "2019-05-20T09:57:45Z",
+                "labels": {
+                    "gluster.kubernetes.io/provisioned-for-pvc": "rshiny-pv-claim"
+                },
+                "name": "glusterfs-dynamic-b407a7e7-7ae5-11e9-9dea-165f353351b8",
+                "namespace": "rshiny",
+                "resourceVersion": "163001",
+                "selfLink": "/api/v1/namespaces/rshiny/services/glusterfs-dynamic-b407a7e7-7ae5-11e9-9dea-165f353351b8",
+                "uid": "b7ae0c68-7ae5-11e9-9dea-165f353351b8"
+            },
+            "spec": {
+                "clusterIP": "172.30.179.31",
+                "ports": [
+                    {
+                        "port": 1,
+                        "protocol": "TCP",
+                        "targetPort": 1
+                    }
+                ],
+                "sessionAffinity": "None",
+                "type": "ClusterIP"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "metadata": {
+                "annotations": {
+                    "openshift.io/generated-by": "OpenShiftWebConsole"
+                },
+                "creationTimestamp": "2019-05-20T10:14:26Z",
+                "labels": {
+                    "app": "r-gpu"
+                },
+                "name": "r-gpu",
+                "namespace": "rshiny",
+                "resourceVersion": "165306",
+                "selfLink": "/api/v1/namespaces/rshiny/services/r-gpu",
+                "uid": "0bfb6e33-7ae8-11e9-9dea-165f353351b8"
+            },
+            "spec": {
+                "clusterIP": "172.30.172.70",
+                "ports": [
+                    {
+                        "name": "8787-tcp",
+                        "port": 8787,
+                        "protocol": "TCP",
+                        "targetPort": 8787
+                    }
+                ],
+                "selector": {
+                    "deploymentconfig": "r-gpu"
+                },
+                "sessionAffinity": "None",
+                "type": "ClusterIP"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "metadata": {
+                "annotations": {
+                    "openshift.io/generated-by": "OpenShiftWebConsole"
+                },
+                "creationTimestamp": "2019-05-20T15:31:23Z",
+                "labels": {
+                    "app": "rgpu"
+                },
+                "name": "rgpu",
+                "namespace": "rshiny",
+                "resourceVersion": "208331",
+                "selfLink": "/api/v1/namespaces/rshiny/services/rgpu",
+                "uid": "52f75dea-7b14-11e9-9dea-165f353351b8"
+            },
+            "spec": {
+                "clusterIP": "172.30.225.239",
+                "ports": [
+                    {
+                        "name": "8787-tcp",
+                        "port": 8787,
+                        "protocol": "TCP",
+                        "targetPort": 8787
+                    }
+                ],
+                "selector": {
+                    "deploymentconfig": "rgpu"
+                },
+                "sessionAffinity": "None",
+                "type": "ClusterIP"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "data": {
+                ".dockercfg": "eyIxNzIuMzAuMjI0LjIxODo1MDAwIjp7InVzZXJuYW1lIjoic2VydmljZWFjY291bnQiLCJwYXNzd29yZCI6ImV5SmhiR2NpT2lKU1V6STFOaUlzSW10cFpDSTZJaUo5LmV5SnBjM01pT2lKcmRXSmxjbTVsZEdWekwzTmxjblpwWTJWaFkyTnZkVzUwSWl3aWEzVmlaWEp1WlhSbGN5NXBieTl6WlhKMmFXTmxZV05qYjNWdWRDOXVZVzFsYzNCaFkyVWlPaUp5YzJocGJua2lMQ0pyZFdKbGNtNWxkR1Z6TG1sdkwzTmxjblpwWTJWaFkyTnZkVzUwTDNObFkzSmxkQzV1WVcxbElqb2lZblZwYkdSbGNpMTBiMnRsYmkxNk9XeHliU0lzSW10MVltVnlibVYwWlhNdWFXOHZjMlZ5ZG1salpXRmpZMjkxYm5RdmMyVnlkbWxqWlMxaFkyTnZkVzUwTG01aGJXVWlPaUppZFdsc1pHVnlJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5elpYSjJhV05sTFdGalkyOTFiblF1ZFdsa0lqb2lPV1E0TUdZME1qZ3ROMkZsTlMweE1XVTVMVGxrWldFdE1UWTFaak0xTXpNMU1XSTRJaXdpYzNWaUlqb2ljM2x6ZEdWdE9uTmxjblpwWTJWaFkyTnZkVzUwT25KemFHbHVlVHBpZFdsc1pHVnlJbjAuUFppb1hsdlVQLVJWR2otQ0R4c3R4d0RsY29tYzVidzFKTjcteUQxZ0xYdG5abk05Zi0wZnJXaHZNVFk1bm9KRjd0VEdmSHVVS2V1MXNiQXZ2RDkyWnRKaWNwX01Hb0VzRnRBSXR0dDZkbkRBZkQ3bGpuZ3lvMVFEVmdrWlIwbXIyU0RNOGhXc0t1ZDJsejZRckVyNFpGdGp6WFkwY0thYUV1VHlleGNhQjlVRVd6UkFzU3dicXpQOW9WWThrSVFoOXJrMDAtM1lHTFhKMG1NcEJKT25pWnd6VzNXdTU1RzZNekhoRDBtb3Q0emdkbDgwZFRPNjRBeEFkU0JtdGtJcmstNGIzZTUxWUY3R1pJNnIycWt3R2g5V21rdHVLQURTczdRbFNmMXdzRlZ6eGFjMjUzc3J4ckwwam9NZVVUMnNlSDhITzhxUXNYUFZqZzM2cWkwSXF3IiwiZW1haWwiOiJzZXJ2aWNlYWNjb3VudEBleGFtcGxlLm9yZyIsImF1dGgiOiJjMlZ5ZG1salpXRmpZMjkxYm5RNlpYbEthR0pIWTJsUGFVcFRWWHBKTVU1cFNYTkpiWFJ3V2tOSk5rbHBTamt1WlhsS2NHTXpUV2xQYVVweVpGZEtiR050Tld4a1IxWjZURE5PYkdOdVduQlpNbFpvV1RKT2RtUlhOVEJKYVhkcFlUTldhVnBZU25WYVdGSnNZM2sxY0dKNU9YcGFXRW95WVZkT2JGbFhUbXBpTTFaMVpFTTVkVmxYTVd4ak0wSm9XVEpWYVU5cFNubGpNbWh3WW01cmFVeERTbkprVjBwc1kyMDFiR1JIVm5wTWJXeDJURE5PYkdOdVduQlpNbFpvV1RKT2RtUlhOVEJNTTA1c1dUTktiR1JETlhWWlZ6RnNTV3B2YVZsdVZuQmlSMUpzWTJreE1HSXlkR3hpYVRFMlQxZDRlV0pUU1hOSmJYUXhXVzFXZVdKdFZqQmFXRTExWVZjNGRtTXlWbmxrYld4cVdsZEdhbGt5T1RGaWJsRjJZekpXZVdSdGJHcGFVekZvV1RKT2RtUlhOVEJNYlRWb1lsZFZhVTlwU21sa1YyeHpXa2RXZVVscGQybGhNMVpwV2xoS2RWcFlVbXhqZVRWd1luazVlbHBZU2pKaFYwNXNXVmRPYW1JelZuVmtRemw2V2xoS01tRlhUbXhNVjBacVdUSTVNV0p1VVhWa1YyeHJTV3B2YVU5WFVUUk5SMWt3VFdwbmRFNHlSbXhPVXpCNFRWZFZOVXhVYkd0YVYwVjBUVlJaTVZwcVRURk5lazB4VFZkSk5FbHBkMmxqTTFacFNXcHZhV016Ykhwa1IxWjBUMjVPYkdOdVduQlpNbFpvV1RKT2RtUlhOVEJQYmtwNllVZHNkV1ZVY0dsa1YyeHpXa2RXZVVsdU1DNVFXbWx2V0d4MlZWQXRVbFpIYWkxRFJIaHpkSGgzUkd4amIyMWpOV0ozTVVwT055MTVSREZuVEZoMGJscHVUVGxtTFRCbWNsZG9kazFVV1RWdWIwcEdOM1JVUjJaSWRWVkxaWFV4YzJKQmRuWkVPVEphZEVwcFkzQmZUVWR2UlhOR2RFRkpkSFIwTm1SdVJFRm1SRGRzYW01bmVXOHhVVVJXWjJ0YVVqQnRjakpUUkUwNGFGZHpTM1ZrTW14Nk5sRnlSWEkwV2taMGFucFlXVEJqUzJGaFJYVlVlV1Y0WTJGQ09WVkZWM3BTUVhOVGQySnhlbEE1YjFaWk9HdEpVV2c1Y21zd01DMHpXVWRNV0Vvd2JVMXdRa3BQYm1sYWQzcFhNMWQxTlRWSE5rMTZTR2hFTUcxdmREUjZaMlJzT0RCa1ZFODJORUY0UVdSVFFtMTBhMGx5YXkwMFlqTmxOVEZaUmpkSFdrazJjakp4YTNkSGFEbFhiV3QwZFV0QlJGTnpOMUZzVTJZeGQzTkdWbnA0WVdNeU5UTnpjbmh5VERCcWIwMWxWVlF5YzJWSU9FaFBPSEZSYzFoUVZtcG5Nelp4YVRCSmNYYz0ifSwiZG9ja2VyLXJlZ2lzdHJ5LmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWw6NTAwMCI6eyJ1c2VybmFtZSI6InNlcnZpY2VhY2NvdW50IiwicGFzc3dvcmQiOiJleUpoYkdjaU9pSlNVekkxTmlJc0ltdHBaQ0k2SWlKOS5leUpwYzNNaU9pSnJkV0psY201bGRHVnpMM05sY25acFkyVmhZMk52ZFc1MElpd2lhM1ZpWlhKdVpYUmxjeTVwYnk5elpYSjJhV05sWVdOamIzVnVkQzl1WVcxbGMzQmhZMlVpT2lKeWMyaHBibmtpTENKcmRXSmxjbTVsZEdWekxtbHZMM05sY25acFkyVmhZMk52ZFc1MEwzTmxZM0psZEM1dVlXMWxJam9pWW5WcGJHUmxjaTEwYjJ0bGJpMTZPV3h5YlNJc0ltdDFZbVZ5Ym1WMFpYTXVhVzh2YzJWeWRtbGpaV0ZqWTI5MWJuUXZjMlZ5ZG1salpTMWhZMk52ZFc1MExtNWhiV1VpT2lKaWRXbHNaR1Z5SWl3aWEzVmlaWEp1WlhSbGN5NXBieTl6WlhKMmFXTmxZV05qYjNWdWRDOXpaWEoyYVdObExXRmpZMjkxYm5RdWRXbGtJam9pT1dRNE1HWTBNamd0TjJGbE5TMHhNV1U1TFRsa1pXRXRNVFkxWmpNMU16TTFNV0k0SWl3aWMzVmlJam9pYzNsemRHVnRPbk5sY25acFkyVmhZMk52ZFc1ME9uSnphR2x1ZVRwaWRXbHNaR1Z5SW4wLlBaaW9YbHZVUC1SVkdqLUNEeHN0eHdEbGNvbWM1YncxSk43LXlEMWdMWHRuWm5NOWYtMGZyV2h2TVRZNW5vSkY3dFRHZkh1VUtldTFzYkF2dkQ5Mlp0SmljcF9NR29Fc0Z0QUl0dHQ2ZG5EQWZEN2xqbmd5bzFRRFZna1pSMG1yMlNETThoV3NLdWQybHo2UXJFcjRaRnRqelhZMGNLYWFFdVR5ZXhjYUI5VUVXelJBc1N3YnF6UDlvVlk4a0lRaDlyazAwLTNZR0xYSjBtTXBCSk9uaVp3elczV3U1NUc2TXpIaEQwbW90NHpnZGw4MGRUTzY0QXhBZFNCbXRrSXJrLTRiM2U1MVlGN0daSTZyMnFrd0doOVdta3R1S0FEU3M3UWxTZjF3c0ZWenhhYzI1M3NyeHJMMGpvTWVVVDJzZUg4SE84cVFzWFBWamczNnFpMElxdyIsImVtYWlsIjoic2VydmljZWFjY291bnRAZXhhbXBsZS5vcmciLCJhdXRoIjoiYzJWeWRtbGpaV0ZqWTI5MWJuUTZaWGxLYUdKSFkybFBhVXBUVlhwSk1VNXBTWE5KYlhSd1drTkpOa2xwU2prdVpYbEtjR016VFdsUGFVcHlaRmRLYkdOdE5XeGtSMVo2VEROT2JHTnVXbkJaTWxab1dUSk9kbVJYTlRCSmFYZHBZVE5XYVZwWVNuVmFXRkpzWTNrMWNHSjVPWHBhV0VveVlWZE9iRmxYVG1waU0xWjFaRU01ZFZsWE1XeGpNMEpvV1RKVmFVOXBTbmxqTW1od1ltNXJhVXhEU25Ka1YwcHNZMjAxYkdSSFZucE1iV3gyVEROT2JHTnVXbkJaTWxab1dUSk9kbVJYTlRCTU0wNXNXVE5LYkdSRE5YVlpWekZzU1dwdmFWbHVWbkJpUjFKc1kya3hNR0l5ZEd4aWFURTJUMWQ0ZVdKVFNYTkpiWFF4V1cxV2VXSnRWakJhV0UxMVlWYzRkbU15Vm5sa2JXeHFXbGRHYWxreU9URmlibEYyWXpKV2VXUnRiR3BhVXpGb1dUSk9kbVJYTlRCTWJUVm9ZbGRWYVU5cFNtbGtWMnh6V2tkV2VVbHBkMmxoTTFacFdsaEtkVnBZVW14amVUVndZbms1ZWxwWVNqSmhWMDVzV1ZkT2FtSXpWblZrUXpsNldsaEtNbUZYVG14TVYwWnFXVEk1TVdKdVVYVmtWMnhyU1dwdmFVOVhVVFJOUjFrd1RXcG5kRTR5Um14T1V6QjRUVmRWTlV4VWJHdGFWMFYwVFZSWk1WcHFUVEZOZWsweFRWZEpORWxwZDJsak0xWnBTV3B2YVdNemJIcGtSMVowVDI1T2JHTnVXbkJaTWxab1dUSk9kbVJYTlRCUGJrcDZZVWRzZFdWVWNHbGtWMnh6V2tkV2VVbHVNQzVRV21sdldHeDJWVkF0VWxaSGFpMURSSGh6ZEhoM1JHeGpiMjFqTldKM01VcE9OeTE1UkRGblRGaDBibHB1VFRsbUxUQm1jbGRvZGsxVVdUVnViMHBHTjNSVVIyWklkVlZMWlhVeGMySkJkblpFT1RKYWRFcHBZM0JmVFVkdlJYTkdkRUZKZEhSME5tUnVSRUZtUkRkc2FtNW5lVzh4VVVSV1oydGFVakJ0Y2pKVFJFMDRhRmR6UzNWa01teDZObEZ5UlhJMFdrWjBhbnBZV1RCalMyRmhSWFZVZVdWNFkyRkNPVlZGVjNwU1FYTlRkMkp4ZWxBNWIxWlpPR3RKVVdnNWNtc3dNQzB6V1VkTVdFb3diVTF3UWtwUGJtbGFkM3BYTTFkMU5UVkhOazE2U0doRU1HMXZkRFI2WjJSc09EQmtWRTgyTkVGNFFXUlRRbTEwYTBseWF5MDBZak5sTlRGWlJqZEhXa2syY2pKeGEzZEhhRGxYYld0MGRVdEJSRk56TjFGc1UyWXhkM05HVm5wNFlXTXlOVE56Y25oeVREQnFiMDFsVlZReWMyVklPRWhQT0hGUmMxaFFWbXBuTXpaeGFUQkpjWGM9In0sImRvY2tlci1yZWdpc3RyeS5kZWZhdWx0LnN2Yzo1MDAwIjp7InVzZXJuYW1lIjoic2VydmljZWFjY291bnQiLCJwYXNzd29yZCI6ImV5SmhiR2NpT2lKU1V6STFOaUlzSW10cFpDSTZJaUo5LmV5SnBjM01pT2lKcmRXSmxjbTVsZEdWekwzTmxjblpwWTJWaFkyTnZkVzUwSWl3aWEzVmlaWEp1WlhSbGN5NXBieTl6WlhKMmFXTmxZV05qYjNWdWRDOXVZVzFsYzNCaFkyVWlPaUp5YzJocGJua2lMQ0pyZFdKbGNtNWxkR1Z6TG1sdkwzTmxjblpwWTJWaFkyTnZkVzUwTDNObFkzSmxkQzV1WVcxbElqb2lZblZwYkdSbGNpMTBiMnRsYmkxNk9XeHliU0lzSW10MVltVnlibVYwWlhNdWFXOHZjMlZ5ZG1salpXRmpZMjkxYm5RdmMyVnlkbWxqWlMxaFkyTnZkVzUwTG01aGJXVWlPaUppZFdsc1pHVnlJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5elpYSjJhV05sTFdGalkyOTFiblF1ZFdsa0lqb2lPV1E0TUdZME1qZ3ROMkZsTlMweE1XVTVMVGxrWldFdE1UWTFaak0xTXpNMU1XSTRJaXdpYzNWaUlqb2ljM2x6ZEdWdE9uTmxjblpwWTJWaFkyTnZkVzUwT25KemFHbHVlVHBpZFdsc1pHVnlJbjAuUFppb1hsdlVQLVJWR2otQ0R4c3R4d0RsY29tYzVidzFKTjcteUQxZ0xYdG5abk05Zi0wZnJXaHZNVFk1bm9KRjd0VEdmSHVVS2V1MXNiQXZ2RDkyWnRKaWNwX01Hb0VzRnRBSXR0dDZkbkRBZkQ3bGpuZ3lvMVFEVmdrWlIwbXIyU0RNOGhXc0t1ZDJsejZRckVyNFpGdGp6WFkwY0thYUV1VHlleGNhQjlVRVd6UkFzU3dicXpQOW9WWThrSVFoOXJrMDAtM1lHTFhKMG1NcEJKT25pWnd6VzNXdTU1RzZNekhoRDBtb3Q0emdkbDgwZFRPNjRBeEFkU0JtdGtJcmstNGIzZTUxWUY3R1pJNnIycWt3R2g5V21rdHVLQURTczdRbFNmMXdzRlZ6eGFjMjUzc3J4ckwwam9NZVVUMnNlSDhITzhxUXNYUFZqZzM2cWkwSXF3IiwiZW1haWwiOiJzZXJ2aWNlYWNjb3VudEBleGFtcGxlLm9yZyIsImF1dGgiOiJjMlZ5ZG1salpXRmpZMjkxYm5RNlpYbEthR0pIWTJsUGFVcFRWWHBKTVU1cFNYTkpiWFJ3V2tOSk5rbHBTamt1WlhsS2NHTXpUV2xQYVVweVpGZEtiR050Tld4a1IxWjZURE5PYkdOdVduQlpNbFpvV1RKT2RtUlhOVEJKYVhkcFlUTldhVnBZU25WYVdGSnNZM2sxY0dKNU9YcGFXRW95WVZkT2JGbFhUbXBpTTFaMVpFTTVkVmxYTVd4ak0wSm9XVEpWYVU5cFNubGpNbWh3WW01cmFVeERTbkprVjBwc1kyMDFiR1JIVm5wTWJXeDJURE5PYkdOdVduQlpNbFpvV1RKT2RtUlhOVEJNTTA1c1dUTktiR1JETlhWWlZ6RnNTV3B2YVZsdVZuQmlSMUpzWTJreE1HSXlkR3hpYVRFMlQxZDRlV0pUU1hOSmJYUXhXVzFXZVdKdFZqQmFXRTExWVZjNGRtTXlWbmxrYld4cVdsZEdhbGt5T1RGaWJsRjJZekpXZVdSdGJHcGFVekZvV1RKT2RtUlhOVEJNYlRWb1lsZFZhVTlwU21sa1YyeHpXa2RXZVVscGQybGhNMVpwV2xoS2RWcFlVbXhqZVRWd1luazVlbHBZU2pKaFYwNXNXVmRPYW1JelZuVmtRemw2V2xoS01tRlhUbXhNVjBacVdUSTVNV0p1VVhWa1YyeHJTV3B2YVU5WFVUUk5SMWt3VFdwbmRFNHlSbXhPVXpCNFRWZFZOVXhVYkd0YVYwVjBUVlJaTVZwcVRURk5lazB4VFZkSk5FbHBkMmxqTTFacFNXcHZhV016Ykhwa1IxWjBUMjVPYkdOdVduQlpNbFpvV1RKT2RtUlhOVEJQYmtwNllVZHNkV1ZVY0dsa1YyeHpXa2RXZVVsdU1DNVFXbWx2V0d4MlZWQXRVbFpIYWkxRFJIaHpkSGgzUkd4amIyMWpOV0ozTVVwT055MTVSREZuVEZoMGJscHVUVGxtTFRCbWNsZG9kazFVV1RWdWIwcEdOM1JVUjJaSWRWVkxaWFV4YzJKQmRuWkVPVEphZEVwcFkzQmZUVWR2UlhOR2RFRkpkSFIwTm1SdVJFRm1SRGRzYW01bmVXOHhVVVJXWjJ0YVVqQnRjakpUUkUwNGFGZHpTM1ZrTW14Nk5sRnlSWEkwV2taMGFucFlXVEJqUzJGaFJYVlVlV1Y0WTJGQ09WVkZWM3BTUVhOVGQySnhlbEE1YjFaWk9HdEpVV2c1Y21zd01DMHpXVWRNV0Vvd2JVMXdRa3BQYm1sYWQzcFhNMWQxTlRWSE5rMTZTR2hFTUcxdmREUjZaMlJzT0RCa1ZFODJORUY0UVdSVFFtMTBhMGx5YXkwMFlqTmxOVEZaUmpkSFdrazJjakp4YTNkSGFEbFhiV3QwZFV0QlJGTnpOMUZzVTJZeGQzTkdWbnA0WVdNeU5UTnpjbmh5VERCcWIwMWxWVlF5YzJWSU9FaFBPSEZSYzFoUVZtcG5Nelp4YVRCSmNYYz0ifX0="
+            },
+            "kind": "Secret",
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/service-account.name": "builder",
+                    "kubernetes.io/service-account.uid": "9d80f428-7ae5-11e9-9dea-165f353351b8",
+                    "openshift.io/token-secret.name": "builder-token-z9lrm",
+                    "openshift.io/token-secret.value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJyc2hpbnkiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlY3JldC5uYW1lIjoiYnVpbGRlci10b2tlbi16OWxybSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJidWlsZGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiOWQ4MGY0MjgtN2FlNS0xMWU5LTlkZWEtMTY1ZjM1MzM1MWI4Iiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OnJzaGlueTpidWlsZGVyIn0.PZioXlvUP-RVGj-CDxstxwDlcomc5bw1JN7-yD1gLXtnZnM9f-0frWhvMTY5noJF7tTGfHuUKeu1sbAvvD92ZtJicp_MGoEsFtAIttt6dnDAfD7ljngyo1QDVgkZR0mr2SDM8hWsKud2lz6QrEr4ZFtjzXY0cKaaEuTyexcaB9UEWzRAsSwbqzP9oVY8kIQh9rk00-3YGLXJ0mMpBJOniZwzW3Wu55G6MzHhD0mot4zgdl80dTO64AxAdSBmtkIrk-4b3e51YF7GZI6r2qkwGh9WmktuKADSs7QlSf1wsFVzxac253srxrL0joMeUT2seH8HO8qQsXPVjg36qi0Iqw"
+                },
+                "creationTimestamp": "2019-05-20T09:57:02Z",
+                "name": "builder-dockercfg-sx56g",
+                "namespace": "rshiny",
+                "resourceVersion": "162875",
+                "selfLink": "/api/v1/namespaces/rshiny/secrets/builder-dockercfg-sx56g",
+                "uid": "9d8e4c4b-7ae5-11e9-9dea-165f353351b8"
+            },
+            "type": "kubernetes.io/dockercfg"
+        },
+        {
+            "apiVersion": "v1",
+            "data": {
+                "ca.crt": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFtTVNRd0lnWURWUVFEREJ0dmNHVnUKYzJocFpuUXRjMmxuYm1WeVFERTFOVGM0TnpneE9UUXdIaGNOTVRrd05URTBNak0xTmpNMFdoY05NalF3TlRFeQpNak0xTmpNMVdqQW1NU1F3SWdZRFZRUUREQnR2Y0dWdWMyaHBablF0YzJsbmJtVnlRREUxTlRjNE56Z3hPVFF3CmdnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURFOGFjcE8vT2dKVC9WRE5JUnY3bnMKSTNFWU5QN3ZVeFV5T3FQNTBQbDJ5M04vVGwrNVplTHJVcWpodFZyd3MzYXdvTkZpNlpzRTlOYVJKSXNHcjgvRwpZbFc3bnpjY0ZxamhkbldCNHJuY3NUd0FxWHdXa3ROZW4veGpIN1BsZWtDbXhiN1dFZDVIbVUwc1VSb2FFWmEwCmZvZ3pRbC9MUC9WUVlzbjNJWTFEQW9ndVhsMXNVamlqbm9hMmpiejlLb0N0LzJ2c2cxZG5wY2lOYXErSzlSSUYKeFNvWXhFMm9ybFpOQUY4TXlSMnNwVGNpRUsvWnJ4R3dBc3dRUkh2WlgxcHI1cXVqSzNQUzNXQnF0RS9FY3NtaAp6b0VFdVpyUnhPN1VBUmRuSUYvVnl1RFBrZUhSaDZQMVRaYVNZQ2xMNHNVYWxBcXIrdnp1c3NiVzlEalpNV2FoCkFnTUJBQUdqSXpBaE1BNEdBMVVkRHdFQi93UUVBd0lDcERBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQXdZRXJYUnBCU2cvVVZFVzhuUGpjN3Z4SXJNRlBVVDh6dXo1UlJidU1qdk81UwpJd0ZkWWRML0VYNlBBR3ZUTTcvRitjTk92d0FSL09JUkZrU3ZocWpoUFEvQi84MG9mWUhWR0cyeUNud3I5YndNCmxyUEVXajhhTFgvVGxzbk1kbVAxSk5ueXFiQXhhY3B2YU5kRkJObE0rUFQ2WWZEVEh6d0swZ2FGdVVWcmhxU20KUk1FeGhodGx3WG1Qak5lUG1wOXcrcEJzSHdWQ0FvdmJSNHVzdnBuTGVqb0NISG9ETEUxVzJ6T0I0eU9sNEFvUwpRYmZBS3Jicy9MN1RQb2UyRVJRR3NEUllmRUJ2ZjNwTFBFMUFrcUh3YkNoYWNpcXA2djJOcUFJc24xWFRQTnk1CjVPZ20raEZoWTJaSFpiRXNycHpvdnZHVUl5ZEJGTVBNd21VRWhNcE0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+                "namespace": "cnNoaW55",
+                "service-ca.crt": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFtTVNRd0lnWURWUVFEREJ0dmNHVnUKYzJocFpuUXRjMmxuYm1WeVFERTFOVGM0TnpneE9UUXdIaGNOTVRrd05URTBNak0xTmpNMFdoY05NalF3TlRFeQpNak0xTmpNMVdqQW1NU1F3SWdZRFZRUUREQnR2Y0dWdWMyaHBablF0YzJsbmJtVnlRREUxTlRjNE56Z3hPVFF3CmdnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURFOGFjcE8vT2dKVC9WRE5JUnY3bnMKSTNFWU5QN3ZVeFV5T3FQNTBQbDJ5M04vVGwrNVplTHJVcWpodFZyd3MzYXdvTkZpNlpzRTlOYVJKSXNHcjgvRwpZbFc3bnpjY0ZxamhkbldCNHJuY3NUd0FxWHdXa3ROZW4veGpIN1BsZWtDbXhiN1dFZDVIbVUwc1VSb2FFWmEwCmZvZ3pRbC9MUC9WUVlzbjNJWTFEQW9ndVhsMXNVamlqbm9hMmpiejlLb0N0LzJ2c2cxZG5wY2lOYXErSzlSSUYKeFNvWXhFMm9ybFpOQUY4TXlSMnNwVGNpRUsvWnJ4R3dBc3dRUkh2WlgxcHI1cXVqSzNQUzNXQnF0RS9FY3NtaAp6b0VFdVpyUnhPN1VBUmRuSUYvVnl1RFBrZUhSaDZQMVRaYVNZQ2xMNHNVYWxBcXIrdnp1c3NiVzlEalpNV2FoCkFnTUJBQUdqSXpBaE1BNEdBMVVkRHdFQi93UUVBd0lDcERBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQXdZRXJYUnBCU2cvVVZFVzhuUGpjN3Z4SXJNRlBVVDh6dXo1UlJidU1qdk81UwpJd0ZkWWRML0VYNlBBR3ZUTTcvRitjTk92d0FSL09JUkZrU3ZocWpoUFEvQi84MG9mWUhWR0cyeUNud3I5YndNCmxyUEVXajhhTFgvVGxzbk1kbVAxSk5ueXFiQXhhY3B2YU5kRkJObE0rUFQ2WWZEVEh6d0swZ2FGdVVWcmhxU20KUk1FeGhodGx3WG1Qak5lUG1wOXcrcEJzSHdWQ0FvdmJSNHVzdnBuTGVqb0NISG9ETEUxVzJ6T0I0eU9sNEFvUwpRYmZBS3Jicy9MN1RQb2UyRVJRR3NEUllmRUJ2ZjNwTFBFMUFrcUh3YkNoYWNpcXA2djJOcUFJc24xWFRQTnk1CjVPZ20raEZoWTJaSFpiRXNycHpvdnZHVUl5ZEJGTVBNd21VRWhNcE0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQoKLS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURDakNDQWZLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREEyTVRRd01nWURWUVFEREN0dmNHVnUKYzJocFpuUXRjMlZ5ZG1salpTMXpaWEoyYVc1bkxYTnBaMjVsY2tBeE5UVTNPRGM0TVRrMU1CNFhEVEU1TURVeApOREl6TlRZek5Wb1hEVEkwTURVeE1qSXpOVFl6Tmxvd05qRTBNRElHQTFVRUF3d3JiM0JsYm5Ob2FXWjBMWE5sCmNuWnBZMlV0YzJWeWRtbHVaeTF6YVdkdVpYSkFNVFUxTnpnM09ERTVOVENDQVNJd0RRWUpLb1pJaHZjTkFRRUIKQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUNCR1NhdGhwVzB2ekFYNzVYRXkxZ3RzTDNyVTFka0hJLzRoMW5CMTBldAoxa3lRRHhQMGVZamFBNXU5UnpZVkpjYkY0VHRmV093OGNrWFZHR2t0SlNiNVVJSGFBUTl5dHFENjVRUm1QNDFtCjNyaDFtV0Y3a3MvcFpsNUpDN3lhdk45TWtBR01IQk1COXovb0ZiWUxKVTFFc1ZLSW1ycFZPQVpGaTNVeUVLNHcKYmFoWlhGUWh1MWhreUZOZW9QbkVGZ1E5cDhDZjNJaEtMNHM5WUN3VE5HejFYYjJ4cTFoYnBlNURtK1dSYWEyVQpaaXE0VDJaNUlOVEM3UjhNb3NCLzAwaU5BUFFGV0xCd2RxUWNBa0hNWUsyeGZjcmd3ekpvakE0aFRUUzBrNzlXCjQyb1JCMFByTnBmMk5nMkFSMEVmS0ZEL3Q0OUljc0g5NmZhMjRrTmI3eGNDQXdFQUFhTWpNQ0V3RGdZRFZSMFAKQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCL3dRRk1BTUJBZjh3RFFZSktvWklodmNOQVFFTEJRQURnZ0VCQURNeQpMNjlPYVFxY1A5YWRZbWV5STNaNE9PRlJWV2xUeDJzOFNET0RYZTJTU1AyUGFEczJ6OFNyaHdJUGkxeXQvRUlVCnVsU3BtMGxvMnJ2MEdsLzN3eXMrM0Jhd2Z3cVlRYlI2eHArem11RXRTOWtHNm5EaXcwMXljQzd1T1hLN2NmNTUKNnhRcVZVNWovSm5HbFdkQUVzYnowRmdYazl6U3dDMzVEMDJpU3VuZGVYRGlDYUxwcnRBZytBWUtLemJyTUoxbAoxSHJkZ0dMTzk1QktFOEtQdjFSYSt2SWlkeW85MkkwN3ZYRks5cU8zK00reDhFbzVmSUw4aFlpcnZoSkowaDBsCm1PU0ZyY3plRUxpaGRvL2tKbE9HTVh2OEFOd2IzbjhMWlg5NTNVZGcrbkxydFA0SzBRbkNiRytlK0ExK2FTVVYKZ1VRT01ITWxPOXpSUHZkWWNobz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+                "token": "ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklpSjkuZXlKcGMzTWlPaUpyZFdKbGNtNWxkR1Z6TDNObGNuWnBZMlZoWTJOdmRXNTBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5dVlXMWxjM0JoWTJVaU9pSnljMmhwYm5raUxDSnJkV0psY201bGRHVnpMbWx2TDNObGNuWnBZMlZoWTJOdmRXNTBMM05sWTNKbGRDNXVZVzFsSWpvaVluVnBiR1JsY2kxMGIydGxiaTB5ZG01aU5TSXNJbXQxWW1WeWJtVjBaWE11YVc4dmMyVnlkbWxqWldGalkyOTFiblF2YzJWeWRtbGpaUzFoWTJOdmRXNTBMbTVoYldVaU9pSmlkV2xzWkdWeUlpd2lhM1ZpWlhKdVpYUmxjeTVwYnk5elpYSjJhV05sWVdOamIzVnVkQzl6WlhKMmFXTmxMV0ZqWTI5MWJuUXVkV2xrSWpvaU9XUTRNR1kwTWpndE4yRmxOUzB4TVdVNUxUbGtaV0V0TVRZMVpqTTFNek0xTVdJNElpd2ljM1ZpSWpvaWMzbHpkR1Z0T25ObGNuWnBZMlZoWTJOdmRXNTBPbkp6YUdsdWVUcGlkV2xzWkdWeUluMC5YTmtNSFRoZDI0NjBmc0FhQzBTbC1CeGJJNmFhbFdzOGc3TmJoQms2dXRqd2NZOVl0VmM2dzRNM0hHR2dfRWJud05ydTdRTTQ0TWhEdFBaYjdrc2ZJeGoxVFIyNXBmY3pnSmRYbVBOUWhzNmNfci1naF85RXgyUUZhTW5OczVBVE1rbkR1MWdQLTZhelZiZTN3YVU4SXU5VmRnUkloblUtRUNxam0ydDZGdEEtbnoyN2JsNVVxRG1CTjVVWVZFQno4QjZWTGl2c2dLZTUtbklpMW84V2JUUjVMSHpZekxpMUtsUnNuMnJUcWljZ1d0cFlFNUVhcWItQ1pEQm1lUzBjb2xJRWdDTjRnNVpnUHpaeVo0dTNvd3ptZ0pNVFNpVTVXZ2dqeTRvZnRUd1N2WmJWb3lQSjVpa29jRUdxZHpTUkk1WkpJOXZZM203TFN2blowVm1OeEE="
+            },
+            "kind": "Secret",
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/service-account.name": "builder",
+                    "kubernetes.io/service-account.uid": "9d80f428-7ae5-11e9-9dea-165f353351b8"
+                },
+                "creationTimestamp": "2019-05-20T09:57:02Z",
+                "name": "builder-token-2vnb5",
+                "namespace": "rshiny",
+                "resourceVersion": "162857",
+                "selfLink": "/api/v1/namespaces/rshiny/secrets/builder-token-2vnb5",
+                "uid": "9d849e02-7ae5-11e9-9dea-165f353351b8"
+            },
+            "type": "kubernetes.io/service-account-token"
+        },
+        {
+            "apiVersion": "v1",
+            "data": {
+                "ca.crt": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFtTVNRd0lnWURWUVFEREJ0dmNHVnUKYzJocFpuUXRjMmxuYm1WeVFERTFOVGM0TnpneE9UUXdIaGNOTVRrd05URTBNak0xTmpNMFdoY05NalF3TlRFeQpNak0xTmpNMVdqQW1NU1F3SWdZRFZRUUREQnR2Y0dWdWMyaHBablF0YzJsbmJtVnlRREUxTlRjNE56Z3hPVFF3CmdnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURFOGFjcE8vT2dKVC9WRE5JUnY3bnMKSTNFWU5QN3ZVeFV5T3FQNTBQbDJ5M04vVGwrNVplTHJVcWpodFZyd3MzYXdvTkZpNlpzRTlOYVJKSXNHcjgvRwpZbFc3bnpjY0ZxamhkbldCNHJuY3NUd0FxWHdXa3ROZW4veGpIN1BsZWtDbXhiN1dFZDVIbVUwc1VSb2FFWmEwCmZvZ3pRbC9MUC9WUVlzbjNJWTFEQW9ndVhsMXNVamlqbm9hMmpiejlLb0N0LzJ2c2cxZG5wY2lOYXErSzlSSUYKeFNvWXhFMm9ybFpOQUY4TXlSMnNwVGNpRUsvWnJ4R3dBc3dRUkh2WlgxcHI1cXVqSzNQUzNXQnF0RS9FY3NtaAp6b0VFdVpyUnhPN1VBUmRuSUYvVnl1RFBrZUhSaDZQMVRaYVNZQ2xMNHNVYWxBcXIrdnp1c3NiVzlEalpNV2FoCkFnTUJBQUdqSXpBaE1BNEdBMVVkRHdFQi93UUVBd0lDcERBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQXdZRXJYUnBCU2cvVVZFVzhuUGpjN3Z4SXJNRlBVVDh6dXo1UlJidU1qdk81UwpJd0ZkWWRML0VYNlBBR3ZUTTcvRitjTk92d0FSL09JUkZrU3ZocWpoUFEvQi84MG9mWUhWR0cyeUNud3I5YndNCmxyUEVXajhhTFgvVGxzbk1kbVAxSk5ueXFiQXhhY3B2YU5kRkJObE0rUFQ2WWZEVEh6d0swZ2FGdVVWcmhxU20KUk1FeGhodGx3WG1Qak5lUG1wOXcrcEJzSHdWQ0FvdmJSNHVzdnBuTGVqb0NISG9ETEUxVzJ6T0I0eU9sNEFvUwpRYmZBS3Jicy9MN1RQb2UyRVJRR3NEUllmRUJ2ZjNwTFBFMUFrcUh3YkNoYWNpcXA2djJOcUFJc24xWFRQTnk1CjVPZ20raEZoWTJaSFpiRXNycHpvdnZHVUl5ZEJGTVBNd21VRWhNcE0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+                "namespace": "cnNoaW55",
+                "service-ca.crt": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFtTVNRd0lnWURWUVFEREJ0dmNHVnUKYzJocFpuUXRjMmxuYm1WeVFERTFOVGM0TnpneE9UUXdIaGNOTVRrd05URTBNak0xTmpNMFdoY05NalF3TlRFeQpNak0xTmpNMVdqQW1NU1F3SWdZRFZRUUREQnR2Y0dWdWMyaHBablF0YzJsbmJtVnlRREUxTlRjNE56Z3hPVFF3CmdnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURFOGFjcE8vT2dKVC9WRE5JUnY3bnMKSTNFWU5QN3ZVeFV5T3FQNTBQbDJ5M04vVGwrNVplTHJVcWpodFZyd3MzYXdvTkZpNlpzRTlOYVJKSXNHcjgvRwpZbFc3bnpjY0ZxamhkbldCNHJuY3NUd0FxWHdXa3ROZW4veGpIN1BsZWtDbXhiN1dFZDVIbVUwc1VSb2FFWmEwCmZvZ3pRbC9MUC9WUVlzbjNJWTFEQW9ndVhsMXNVamlqbm9hMmpiejlLb0N0LzJ2c2cxZG5wY2lOYXErSzlSSUYKeFNvWXhFMm9ybFpOQUY4TXlSMnNwVGNpRUsvWnJ4R3dBc3dRUkh2WlgxcHI1cXVqSzNQUzNXQnF0RS9FY3NtaAp6b0VFdVpyUnhPN1VBUmRuSUYvVnl1RFBrZUhSaDZQMVRaYVNZQ2xMNHNVYWxBcXIrdnp1c3NiVzlEalpNV2FoCkFnTUJBQUdqSXpBaE1BNEdBMVVkRHdFQi93UUVBd0lDcERBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQXdZRXJYUnBCU2cvVVZFVzhuUGpjN3Z4SXJNRlBVVDh6dXo1UlJidU1qdk81UwpJd0ZkWWRML0VYNlBBR3ZUTTcvRitjTk92d0FSL09JUkZrU3ZocWpoUFEvQi84MG9mWUhWR0cyeUNud3I5YndNCmxyUEVXajhhTFgvVGxzbk1kbVAxSk5ueXFiQXhhY3B2YU5kRkJObE0rUFQ2WWZEVEh6d0swZ2FGdVVWcmhxU20KUk1FeGhodGx3WG1Qak5lUG1wOXcrcEJzSHdWQ0FvdmJSNHVzdnBuTGVqb0NISG9ETEUxVzJ6T0I0eU9sNEFvUwpRYmZBS3Jicy9MN1RQb2UyRVJRR3NEUllmRUJ2ZjNwTFBFMUFrcUh3YkNoYWNpcXA2djJOcUFJc24xWFRQTnk1CjVPZ20raEZoWTJaSFpiRXNycHpvdnZHVUl5ZEJGTVBNd21VRWhNcE0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQoKLS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURDakNDQWZLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREEyTVRRd01nWURWUVFEREN0dmNHVnUKYzJocFpuUXRjMlZ5ZG1salpTMXpaWEoyYVc1bkxYTnBaMjVsY2tBeE5UVTNPRGM0TVRrMU1CNFhEVEU1TURVeApOREl6TlRZek5Wb1hEVEkwTURVeE1qSXpOVFl6Tmxvd05qRTBNRElHQTFVRUF3d3JiM0JsYm5Ob2FXWjBMWE5sCmNuWnBZMlV0YzJWeWRtbHVaeTF6YVdkdVpYSkFNVFUxTnpnM09ERTVOVENDQVNJd0RRWUpLb1pJaHZjTkFRRUIKQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUNCR1NhdGhwVzB2ekFYNzVYRXkxZ3RzTDNyVTFka0hJLzRoMW5CMTBldAoxa3lRRHhQMGVZamFBNXU5UnpZVkpjYkY0VHRmV093OGNrWFZHR2t0SlNiNVVJSGFBUTl5dHFENjVRUm1QNDFtCjNyaDFtV0Y3a3MvcFpsNUpDN3lhdk45TWtBR01IQk1COXovb0ZiWUxKVTFFc1ZLSW1ycFZPQVpGaTNVeUVLNHcKYmFoWlhGUWh1MWhreUZOZW9QbkVGZ1E5cDhDZjNJaEtMNHM5WUN3VE5HejFYYjJ4cTFoYnBlNURtK1dSYWEyVQpaaXE0VDJaNUlOVEM3UjhNb3NCLzAwaU5BUFFGV0xCd2RxUWNBa0hNWUsyeGZjcmd3ekpvakE0aFRUUzBrNzlXCjQyb1JCMFByTnBmMk5nMkFSMEVmS0ZEL3Q0OUljc0g5NmZhMjRrTmI3eGNDQXdFQUFhTWpNQ0V3RGdZRFZSMFAKQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCL3dRRk1BTUJBZjh3RFFZSktvWklodmNOQVFFTEJRQURnZ0VCQURNeQpMNjlPYVFxY1A5YWRZbWV5STNaNE9PRlJWV2xUeDJzOFNET0RYZTJTU1AyUGFEczJ6OFNyaHdJUGkxeXQvRUlVCnVsU3BtMGxvMnJ2MEdsLzN3eXMrM0Jhd2Z3cVlRYlI2eHArem11RXRTOWtHNm5EaXcwMXljQzd1T1hLN2NmNTUKNnhRcVZVNWovSm5HbFdkQUVzYnowRmdYazl6U3dDMzVEMDJpU3VuZGVYRGlDYUxwcnRBZytBWUtLemJyTUoxbAoxSHJkZ0dMTzk1QktFOEtQdjFSYSt2SWlkeW85MkkwN3ZYRks5cU8zK00reDhFbzVmSUw4aFlpcnZoSkowaDBsCm1PU0ZyY3plRUxpaGRvL2tKbE9HTVh2OEFOd2IzbjhMWlg5NTNVZGcrbkxydFA0SzBRbkNiRytlK0ExK2FTVVYKZ1VRT01ITWxPOXpSUHZkWWNobz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+                "token": "ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklpSjkuZXlKcGMzTWlPaUpyZFdKbGNtNWxkR1Z6TDNObGNuWnBZMlZoWTJOdmRXNTBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5dVlXMWxjM0JoWTJVaU9pSnljMmhwYm5raUxDSnJkV0psY201bGRHVnpMbWx2TDNObGNuWnBZMlZoWTJOdmRXNTBMM05sWTNKbGRDNXVZVzFsSWpvaVluVnBiR1JsY2kxMGIydGxiaTE2T1d4eWJTSXNJbXQxWW1WeWJtVjBaWE11YVc4dmMyVnlkbWxqWldGalkyOTFiblF2YzJWeWRtbGpaUzFoWTJOdmRXNTBMbTVoYldVaU9pSmlkV2xzWkdWeUlpd2lhM1ZpWlhKdVpYUmxjeTVwYnk5elpYSjJhV05sWVdOamIzVnVkQzl6WlhKMmFXTmxMV0ZqWTI5MWJuUXVkV2xrSWpvaU9XUTRNR1kwTWpndE4yRmxOUzB4TVdVNUxUbGtaV0V0TVRZMVpqTTFNek0xTVdJNElpd2ljM1ZpSWpvaWMzbHpkR1Z0T25ObGNuWnBZMlZoWTJOdmRXNTBPbkp6YUdsdWVUcGlkV2xzWkdWeUluMC5QWmlvWGx2VVAtUlZHai1DRHhzdHh3RGxjb21jNWJ3MUpONy15RDFnTFh0blpuTTlmLTBmcldodk1UWTVub0pGN3RUR2ZIdVVLZXUxc2JBdnZEOTJadEppY3BfTUdvRXNGdEFJdHR0NmRuREFmRDdsam5neW8xUURWZ2taUjBtcjJTRE04aFdzS3VkMmx6NlFyRXI0WkZ0anpYWTBjS2FhRXVUeWV4Y2FCOVVFV3pSQXNTd2JxelA5b1ZZOGtJUWg5cmswMC0zWUdMWEowbU1wQkpPbmlad3pXM1d1NTVHNk16SGhEMG1vdDR6Z2RsODBkVE82NEF4QWRTQm10a0lyay00YjNlNTFZRjdHWkk2cjJxa3dHaDlXbWt0dUtBRFNzN1FsU2Yxd3NGVnp4YWMyNTNzcnhyTDBqb01lVVQyc2VIOEhPOHFRc1hQVmpnMzZxaTBJcXc="
+            },
+            "kind": "Secret",
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "openshift.io/create-dockercfg-secrets",
+                    "kubernetes.io/service-account.name": "builder",
+                    "kubernetes.io/service-account.uid": "9d80f428-7ae5-11e9-9dea-165f353351b8"
+                },
+                "creationTimestamp": "2019-05-20T09:57:02Z",
+                "name": "builder-token-z9lrm",
+                "namespace": "rshiny",
+                "resourceVersion": "162872",
+                "selfLink": "/api/v1/namespaces/rshiny/secrets/builder-token-z9lrm",
+                "uid": "9d874b24-7ae5-11e9-9dea-165f353351b8"
+            },
+            "type": "kubernetes.io/service-account-token"
+        },
+        {
+            "apiVersion": "v1",
+            "data": {
+                ".dockercfg": "eyIxNzIuMzAuMjI0LjIxODo1MDAwIjp7InVzZXJuYW1lIjoic2VydmljZWFjY291bnQiLCJwYXNzd29yZCI6ImV5SmhiR2NpT2lKU1V6STFOaUlzSW10cFpDSTZJaUo5LmV5SnBjM01pT2lKcmRXSmxjbTVsZEdWekwzTmxjblpwWTJWaFkyTnZkVzUwSWl3aWEzVmlaWEp1WlhSbGN5NXBieTl6WlhKMmFXTmxZV05qYjNWdWRDOXVZVzFsYzNCaFkyVWlPaUp5YzJocGJua2lMQ0pyZFdKbGNtNWxkR1Z6TG1sdkwzTmxjblpwWTJWaFkyTnZkVzUwTDNObFkzSmxkQzV1WVcxbElqb2laR1ZtWVhWc2RDMTBiMnRsYmkxek9YRm5aQ0lzSW10MVltVnlibVYwWlhNdWFXOHZjMlZ5ZG1salpXRmpZMjkxYm5RdmMyVnlkbWxqWlMxaFkyTnZkVzUwTG01aGJXVWlPaUprWldaaGRXeDBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5elpYSjJhV05sTFdGalkyOTFiblF1ZFdsa0lqb2lPV1E0TUdJNE1tVXROMkZsTlMweE1XVTVMVGxrWldFdE1UWTFaak0xTXpNMU1XSTRJaXdpYzNWaUlqb2ljM2x6ZEdWdE9uTmxjblpwWTJWaFkyTnZkVzUwT25KemFHbHVlVHBrWldaaGRXeDBJbjAubEdNYnlCR3FlM2lUczQzVFJObjB2QkhjNy10aEdSWFRhOVVwb0ZLYklNQUZ4Ulk2MURVM3U1b1otQS1kQlRuZ1F6QTRrSXhZcHRxc2RoYlc2VlBQVVJwcHRXVFRjeWJBbjV0TENaVHZlY1d1UUkyaHRURXhReUNpU0JaM1RBR00zQW5TSE90M3AxNklGZzRoamVEaUNJMlZCV1podG9YS1YwYWlvdWNEclVHSGNYZ09pLVBmUm1wOTRxc3BZMXl2ejdLcHkxRGRLZElXTUpEUU5Yb2dVS0VXQnpub3RjUVZBaE5walNkVlRlazdaYzNHc0RodE8yWG1CZEdQYjBLSnlUeExMbFhCdlRuVGdpd0pHNWplRl9jVGN2TWJpcHd5MDlsQ2NlSTJXSkszRHFPOURpeGR1SzRtN0pYVFNRbkxERXAzVUI2bkxDUHAza09vNTBQNHZ3IiwiZW1haWwiOiJzZXJ2aWNlYWNjb3VudEBleGFtcGxlLm9yZyIsImF1dGgiOiJjMlZ5ZG1salpXRmpZMjkxYm5RNlpYbEthR0pIWTJsUGFVcFRWWHBKTVU1cFNYTkpiWFJ3V2tOSk5rbHBTamt1WlhsS2NHTXpUV2xQYVVweVpGZEtiR050Tld4a1IxWjZURE5PYkdOdVduQlpNbFpvV1RKT2RtUlhOVEJKYVhkcFlUTldhVnBZU25WYVdGSnNZM2sxY0dKNU9YcGFXRW95WVZkT2JGbFhUbXBpTTFaMVpFTTVkVmxYTVd4ak0wSm9XVEpWYVU5cFNubGpNbWh3WW01cmFVeERTbkprVjBwc1kyMDFiR1JIVm5wTWJXeDJURE5PYkdOdVduQlpNbFpvV1RKT2RtUlhOVEJNTTA1c1dUTktiR1JETlhWWlZ6RnNTV3B2YVZwSFZtMVpXRlp6WkVNeE1HSXlkR3hpYVRGNlQxaEdibHBEU1hOSmJYUXhXVzFXZVdKdFZqQmFXRTExWVZjNGRtTXlWbmxrYld4cVdsZEdhbGt5T1RGaWJsRjJZekpXZVdSdGJHcGFVekZvV1RKT2RtUlhOVEJNYlRWb1lsZFZhVTlwU210YVYxcG9aRmQ0TUVscGQybGhNMVpwV2xoS2RWcFlVbXhqZVRWd1luazVlbHBZU2pKaFYwNXNXVmRPYW1JelZuVmtRemw2V2xoS01tRlhUbXhNVjBacVdUSTVNV0p1VVhWa1YyeHJTV3B2YVU5WFVUUk5SMGswVFcxVmRFNHlSbXhPVXpCNFRWZFZOVXhVYkd0YVYwVjBUVlJaTVZwcVRURk5lazB4VFZkSk5FbHBkMmxqTTFacFNXcHZhV016Ykhwa1IxWjBUMjVPYkdOdVduQlpNbFpvV1RKT2RtUlhOVEJQYmtwNllVZHNkV1ZVY0d0YVYxcG9aRmQ0TUVsdU1DNXNSMDFpZVVKSGNXVXphVlJ6TkROVVVrNXVNSFpDU0dNM0xYUm9SMUpZVkdFNVZYQnZSa3RpU1UxQlJuaFNXVFl4UkZVemRUVnZXaTFCTFdSQ1ZHNW5VWHBCTkd0SmVGbHdkSEZ6WkdoaVZ6WldVRkJWVW5Cd2RGZFVWR041WWtGdU5YUk1RMXBVZG1WalYzVlJTVEpvZEZSRmVGRjVRMmxUUWxvelZFRkhUVE5CYmxOSVQzUXpjREUyU1Vabk5HaHFaVVJwUTBreVZrSlhXbWgwYjFoTFZqQmhhVzkxWTBSeVZVZElZMWhuVDJrdFVHWlNiWEE1TkhGemNGa3hlWFo2TjB0d2VURkVaRXRrU1ZkTlNrUlJUbGh2WjFWTFJWZENlbTV2ZEdOUlZrRm9UbkJxVTJSV1ZHVnJOMXBqTTBkelJHaDBUekpZYlVKa1IxQmlNRXRLZVZSNFRFeHNXRUoyVkc1VVoybDNTa2MxYW1WR1gyTlVZM1pOWW1sd2Qza3dPV3hEWTJWSk1sZEtTek5FY1U4NVJHbDRaSFZMTkcwM1NsaFVVMUZ1VEVSRmNETlZRalp1VEVOUWNETnJUMjgxTUZBMGRuYz0ifSwiZG9ja2VyLXJlZ2lzdHJ5LmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWw6NTAwMCI6eyJ1c2VybmFtZSI6InNlcnZpY2VhY2NvdW50IiwicGFzc3dvcmQiOiJleUpoYkdjaU9pSlNVekkxTmlJc0ltdHBaQ0k2SWlKOS5leUpwYzNNaU9pSnJkV0psY201bGRHVnpMM05sY25acFkyVmhZMk52ZFc1MElpd2lhM1ZpWlhKdVpYUmxjeTVwYnk5elpYSjJhV05sWVdOamIzVnVkQzl1WVcxbGMzQmhZMlVpT2lKeWMyaHBibmtpTENKcmRXSmxjbTVsZEdWekxtbHZMM05sY25acFkyVmhZMk52ZFc1MEwzTmxZM0psZEM1dVlXMWxJam9pWkdWbVlYVnNkQzEwYjJ0bGJpMXpPWEZuWkNJc0ltdDFZbVZ5Ym1WMFpYTXVhVzh2YzJWeWRtbGpaV0ZqWTI5MWJuUXZjMlZ5ZG1salpTMWhZMk52ZFc1MExtNWhiV1VpT2lKa1pXWmhkV3gwSWl3aWEzVmlaWEp1WlhSbGN5NXBieTl6WlhKMmFXTmxZV05qYjNWdWRDOXpaWEoyYVdObExXRmpZMjkxYm5RdWRXbGtJam9pT1dRNE1HSTRNbVV0TjJGbE5TMHhNV1U1TFRsa1pXRXRNVFkxWmpNMU16TTFNV0k0SWl3aWMzVmlJam9pYzNsemRHVnRPbk5sY25acFkyVmhZMk52ZFc1ME9uSnphR2x1ZVRwa1pXWmhkV3gwSW4wLmxHTWJ5QkdxZTNpVHM0M1RSTm4wdkJIYzctdGhHUlhUYTlVcG9GS2JJTUFGeFJZNjFEVTN1NW9aLUEtZEJUbmdRekE0a0l4WXB0cXNkaGJXNlZQUFVScHB0V1RUY3liQW41dExDWlR2ZWNXdVFJMmh0VEV4UXlDaVNCWjNUQUdNM0FuU0hPdDNwMTZJRmc0aGplRGlDSTJWQldaaHRvWEtWMGFpb3VjRHJVR0hjWGdPaS1QZlJtcDk0cXNwWTF5dno3S3B5MURkS2RJV01KRFFOWG9nVUtFV0J6bm90Y1FWQWhOcGpTZFZUZWs3WmMzR3NEaHRPMlhtQmRHUGIwS0p5VHhMTGxYQnZUblRnaXdKRzVqZUZfY1Rjdk1iaXB3eTA5bENjZUkyV0pLM0RxTzlEaXhkdUs0bTdKWFRTUW5MREVwM1VCNm5MQ1BwM2tPbzUwUDR2dyIsImVtYWlsIjoic2VydmljZWFjY291bnRAZXhhbXBsZS5vcmciLCJhdXRoIjoiYzJWeWRtbGpaV0ZqWTI5MWJuUTZaWGxLYUdKSFkybFBhVXBUVlhwSk1VNXBTWE5KYlhSd1drTkpOa2xwU2prdVpYbEtjR016VFdsUGFVcHlaRmRLYkdOdE5XeGtSMVo2VEROT2JHTnVXbkJaTWxab1dUSk9kbVJYTlRCSmFYZHBZVE5XYVZwWVNuVmFXRkpzWTNrMWNHSjVPWHBhV0VveVlWZE9iRmxYVG1waU0xWjFaRU01ZFZsWE1XeGpNMEpvV1RKVmFVOXBTbmxqTW1od1ltNXJhVXhEU25Ka1YwcHNZMjAxYkdSSFZucE1iV3gyVEROT2JHTnVXbkJaTWxab1dUSk9kbVJYTlRCTU0wNXNXVE5LYkdSRE5YVlpWekZzU1dwdmFWcEhWbTFaV0ZaelpFTXhNR0l5ZEd4aWFURjZUMWhHYmxwRFNYTkpiWFF4V1cxV2VXSnRWakJhV0UxMVlWYzRkbU15Vm5sa2JXeHFXbGRHYWxreU9URmlibEYyWXpKV2VXUnRiR3BhVXpGb1dUSk9kbVJYTlRCTWJUVm9ZbGRWYVU5cFNtdGFWMXBvWkZkNE1FbHBkMmxoTTFacFdsaEtkVnBZVW14amVUVndZbms1ZWxwWVNqSmhWMDVzV1ZkT2FtSXpWblZrUXpsNldsaEtNbUZYVG14TVYwWnFXVEk1TVdKdVVYVmtWMnhyU1dwdmFVOVhVVFJOUjBrMFRXMVZkRTR5Um14T1V6QjRUVmRWTlV4VWJHdGFWMFYwVFZSWk1WcHFUVEZOZWsweFRWZEpORWxwZDJsak0xWnBTV3B2YVdNemJIcGtSMVowVDI1T2JHTnVXbkJaTWxab1dUSk9kbVJYTlRCUGJrcDZZVWRzZFdWVWNHdGFWMXBvWkZkNE1FbHVNQzVzUjAxaWVVSkhjV1V6YVZSek5ETlVVazV1TUhaQ1NHTTNMWFJvUjFKWVZHRTVWWEJ2Umt0aVNVMUJSbmhTV1RZeFJGVXpkVFZ2V2kxQkxXUkNWRzVuVVhwQk5HdEplRmx3ZEhGelpHaGlWelpXVUZCVlVuQndkRmRVVkdONVlrRnVOWFJNUTFwVWRtVmpWM1ZSU1RKb2RGUkZlRkY1UTJsVFFsb3pWRUZIVFROQmJsTklUM1F6Y0RFMlNVWm5OR2hxWlVScFEwa3lWa0pYV21oMGIxaExWakJoYVc5MVkwUnlWVWRJWTFoblQya3RVR1pTYlhBNU5IRnpjRmt4ZVhaNk4wdHdlVEZFWkV0a1NWZE5Ta1JSVGxodloxVkxSVmRDZW01dmRHTlJWa0ZvVG5CcVUyUldWR1ZyTjFwak0wZHpSR2gwVHpKWWJVSmtSMUJpTUV0S2VWUjRURXhzV0VKMlZHNVVaMmwzU2tjMWFtVkdYMk5VWTNaTlltbHdkM2t3T1d4RFkyVkpNbGRLU3pORWNVODVSR2w0WkhWTE5HMDNTbGhVVTFGdVRFUkZjRE5WUWpadVRFTlFjRE5yVDI4MU1GQTBkbmM9In0sImRvY2tlci1yZWdpc3RyeS5kZWZhdWx0LnN2Yzo1MDAwIjp7InVzZXJuYW1lIjoic2VydmljZWFjY291bnQiLCJwYXNzd29yZCI6ImV5SmhiR2NpT2lKU1V6STFOaUlzSW10cFpDSTZJaUo5LmV5SnBjM01pT2lKcmRXSmxjbTVsZEdWekwzTmxjblpwWTJWaFkyTnZkVzUwSWl3aWEzVmlaWEp1WlhSbGN5NXBieTl6WlhKMmFXTmxZV05qYjNWdWRDOXVZVzFsYzNCaFkyVWlPaUp5YzJocGJua2lMQ0pyZFdKbGNtNWxkR1Z6TG1sdkwzTmxjblpwWTJWaFkyTnZkVzUwTDNObFkzSmxkQzV1WVcxbElqb2laR1ZtWVhWc2RDMTBiMnRsYmkxek9YRm5aQ0lzSW10MVltVnlibVYwWlhNdWFXOHZjMlZ5ZG1salpXRmpZMjkxYm5RdmMyVnlkbWxqWlMxaFkyTnZkVzUwTG01aGJXVWlPaUprWldaaGRXeDBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5elpYSjJhV05sTFdGalkyOTFiblF1ZFdsa0lqb2lPV1E0TUdJNE1tVXROMkZsTlMweE1XVTVMVGxrWldFdE1UWTFaak0xTXpNMU1XSTRJaXdpYzNWaUlqb2ljM2x6ZEdWdE9uTmxjblpwWTJWaFkyTnZkVzUwT25KemFHbHVlVHBrWldaaGRXeDBJbjAubEdNYnlCR3FlM2lUczQzVFJObjB2QkhjNy10aEdSWFRhOVVwb0ZLYklNQUZ4Ulk2MURVM3U1b1otQS1kQlRuZ1F6QTRrSXhZcHRxc2RoYlc2VlBQVVJwcHRXVFRjeWJBbjV0TENaVHZlY1d1UUkyaHRURXhReUNpU0JaM1RBR00zQW5TSE90M3AxNklGZzRoamVEaUNJMlZCV1podG9YS1YwYWlvdWNEclVHSGNYZ09pLVBmUm1wOTRxc3BZMXl2ejdLcHkxRGRLZElXTUpEUU5Yb2dVS0VXQnpub3RjUVZBaE5walNkVlRlazdaYzNHc0RodE8yWG1CZEdQYjBLSnlUeExMbFhCdlRuVGdpd0pHNWplRl9jVGN2TWJpcHd5MDlsQ2NlSTJXSkszRHFPOURpeGR1SzRtN0pYVFNRbkxERXAzVUI2bkxDUHAza09vNTBQNHZ3IiwiZW1haWwiOiJzZXJ2aWNlYWNjb3VudEBleGFtcGxlLm9yZyIsImF1dGgiOiJjMlZ5ZG1salpXRmpZMjkxYm5RNlpYbEthR0pIWTJsUGFVcFRWWHBKTVU1cFNYTkpiWFJ3V2tOSk5rbHBTamt1WlhsS2NHTXpUV2xQYVVweVpGZEtiR050Tld4a1IxWjZURE5PYkdOdVduQlpNbFpvV1RKT2RtUlhOVEJKYVhkcFlUTldhVnBZU25WYVdGSnNZM2sxY0dKNU9YcGFXRW95WVZkT2JGbFhUbXBpTTFaMVpFTTVkVmxYTVd4ak0wSm9XVEpWYVU5cFNubGpNbWh3WW01cmFVeERTbkprVjBwc1kyMDFiR1JIVm5wTWJXeDJURE5PYkdOdVduQlpNbFpvV1RKT2RtUlhOVEJNTTA1c1dUTktiR1JETlhWWlZ6RnNTV3B2YVZwSFZtMVpXRlp6WkVNeE1HSXlkR3hpYVRGNlQxaEdibHBEU1hOSmJYUXhXVzFXZVdKdFZqQmFXRTExWVZjNGRtTXlWbmxrYld4cVdsZEdhbGt5T1RGaWJsRjJZekpXZVdSdGJHcGFVekZvV1RKT2RtUlhOVEJNYlRWb1lsZFZhVTlwU210YVYxcG9aRmQ0TUVscGQybGhNMVpwV2xoS2RWcFlVbXhqZVRWd1luazVlbHBZU2pKaFYwNXNXVmRPYW1JelZuVmtRemw2V2xoS01tRlhUbXhNVjBacVdUSTVNV0p1VVhWa1YyeHJTV3B2YVU5WFVUUk5SMGswVFcxVmRFNHlSbXhPVXpCNFRWZFZOVXhVYkd0YVYwVjBUVlJaTVZwcVRURk5lazB4VFZkSk5FbHBkMmxqTTFacFNXcHZhV016Ykhwa1IxWjBUMjVPYkdOdVduQlpNbFpvV1RKT2RtUlhOVEJQYmtwNllVZHNkV1ZVY0d0YVYxcG9aRmQ0TUVsdU1DNXNSMDFpZVVKSGNXVXphVlJ6TkROVVVrNXVNSFpDU0dNM0xYUm9SMUpZVkdFNVZYQnZSa3RpU1UxQlJuaFNXVFl4UkZVemRUVnZXaTFCTFdSQ1ZHNW5VWHBCTkd0SmVGbHdkSEZ6WkdoaVZ6WldVRkJWVW5Cd2RGZFVWR041WWtGdU5YUk1RMXBVZG1WalYzVlJTVEpvZEZSRmVGRjVRMmxUUWxvelZFRkhUVE5CYmxOSVQzUXpjREUyU1Vabk5HaHFaVVJwUTBreVZrSlhXbWgwYjFoTFZqQmhhVzkxWTBSeVZVZElZMWhuVDJrdFVHWlNiWEE1TkhGemNGa3hlWFo2TjB0d2VURkVaRXRrU1ZkTlNrUlJUbGh2WjFWTFJWZENlbTV2ZEdOUlZrRm9UbkJxVTJSV1ZHVnJOMXBqTTBkelJHaDBUekpZYlVKa1IxQmlNRXRLZVZSNFRFeHNXRUoyVkc1VVoybDNTa2MxYW1WR1gyTlVZM1pOWW1sd2Qza3dPV3hEWTJWSk1sZEtTek5FY1U4NVJHbDRaSFZMTkcwM1NsaFVVMUZ1VEVSRmNETlZRalp1VEVOUWNETnJUMjgxTUZBMGRuYz0ifX0="
+            },
+            "kind": "Secret",
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/service-account.name": "default",
+                    "kubernetes.io/service-account.uid": "9d80b82e-7ae5-11e9-9dea-165f353351b8",
+                    "openshift.io/token-secret.name": "default-token-s9qgd",
+                    "openshift.io/token-secret.value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJyc2hpbnkiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlY3JldC5uYW1lIjoiZGVmYXVsdC10b2tlbi1zOXFnZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiOWQ4MGI4MmUtN2FlNS0xMWU5LTlkZWEtMTY1ZjM1MzM1MWI4Iiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OnJzaGlueTpkZWZhdWx0In0.lGMbyBGqe3iTs43TRNn0vBHc7-thGRXTa9UpoFKbIMAFxRY61DU3u5oZ-A-dBTngQzA4kIxYptqsdhbW6VPPURpptWTTcybAn5tLCZTvecWuQI2htTExQyCiSBZ3TAGM3AnSHOt3p16IFg4hjeDiCI2VBWZhtoXKV0aioucDrUGHcXgOi-PfRmp94qspY1yvz7Kpy1DdKdIWMJDQNXogUKEWBznotcQVAhNpjSdVTek7Zc3GsDhtO2XmBdGPb0KJyTxLLlXBvTnTgiwJG5jeF_cTcvMbipwy09lCceI2WJK3DqO9DixduK4m7JXTSQnLDEp3UB6nLCPp3kOo50P4vw"
+                },
+                "creationTimestamp": "2019-05-20T09:57:02Z",
+                "name": "default-dockercfg-r8k24",
+                "namespace": "rshiny",
+                "resourceVersion": "162874",
+                "selfLink": "/api/v1/namespaces/rshiny/secrets/default-dockercfg-r8k24",
+                "uid": "9d8dacb3-7ae5-11e9-9dea-165f353351b8"
+            },
+            "type": "kubernetes.io/dockercfg"
+        },
+        {
+            "apiVersion": "v1",
+            "data": {
+                "ca.crt": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFtTVNRd0lnWURWUVFEREJ0dmNHVnUKYzJocFpuUXRjMmxuYm1WeVFERTFOVGM0TnpneE9UUXdIaGNOTVRrd05URTBNak0xTmpNMFdoY05NalF3TlRFeQpNak0xTmpNMVdqQW1NU1F3SWdZRFZRUUREQnR2Y0dWdWMyaHBablF0YzJsbmJtVnlRREUxTlRjNE56Z3hPVFF3CmdnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURFOGFjcE8vT2dKVC9WRE5JUnY3bnMKSTNFWU5QN3ZVeFV5T3FQNTBQbDJ5M04vVGwrNVplTHJVcWpodFZyd3MzYXdvTkZpNlpzRTlOYVJKSXNHcjgvRwpZbFc3bnpjY0ZxamhkbldCNHJuY3NUd0FxWHdXa3ROZW4veGpIN1BsZWtDbXhiN1dFZDVIbVUwc1VSb2FFWmEwCmZvZ3pRbC9MUC9WUVlzbjNJWTFEQW9ndVhsMXNVamlqbm9hMmpiejlLb0N0LzJ2c2cxZG5wY2lOYXErSzlSSUYKeFNvWXhFMm9ybFpOQUY4TXlSMnNwVGNpRUsvWnJ4R3dBc3dRUkh2WlgxcHI1cXVqSzNQUzNXQnF0RS9FY3NtaAp6b0VFdVpyUnhPN1VBUmRuSUYvVnl1RFBrZUhSaDZQMVRaYVNZQ2xMNHNVYWxBcXIrdnp1c3NiVzlEalpNV2FoCkFnTUJBQUdqSXpBaE1BNEdBMVVkRHdFQi93UUVBd0lDcERBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQXdZRXJYUnBCU2cvVVZFVzhuUGpjN3Z4SXJNRlBVVDh6dXo1UlJidU1qdk81UwpJd0ZkWWRML0VYNlBBR3ZUTTcvRitjTk92d0FSL09JUkZrU3ZocWpoUFEvQi84MG9mWUhWR0cyeUNud3I5YndNCmxyUEVXajhhTFgvVGxzbk1kbVAxSk5ueXFiQXhhY3B2YU5kRkJObE0rUFQ2WWZEVEh6d0swZ2FGdVVWcmhxU20KUk1FeGhodGx3WG1Qak5lUG1wOXcrcEJzSHdWQ0FvdmJSNHVzdnBuTGVqb0NISG9ETEUxVzJ6T0I0eU9sNEFvUwpRYmZBS3Jicy9MN1RQb2UyRVJRR3NEUllmRUJ2ZjNwTFBFMUFrcUh3YkNoYWNpcXA2djJOcUFJc24xWFRQTnk1CjVPZ20raEZoWTJaSFpiRXNycHpvdnZHVUl5ZEJGTVBNd21VRWhNcE0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+                "namespace": "cnNoaW55",
+                "service-ca.crt": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFtTVNRd0lnWURWUVFEREJ0dmNHVnUKYzJocFpuUXRjMmxuYm1WeVFERTFOVGM0TnpneE9UUXdIaGNOTVRrd05URTBNak0xTmpNMFdoY05NalF3TlRFeQpNak0xTmpNMVdqQW1NU1F3SWdZRFZRUUREQnR2Y0dWdWMyaHBablF0YzJsbmJtVnlRREUxTlRjNE56Z3hPVFF3CmdnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURFOGFjcE8vT2dKVC9WRE5JUnY3bnMKSTNFWU5QN3ZVeFV5T3FQNTBQbDJ5M04vVGwrNVplTHJVcWpodFZyd3MzYXdvTkZpNlpzRTlOYVJKSXNHcjgvRwpZbFc3bnpjY0ZxamhkbldCNHJuY3NUd0FxWHdXa3ROZW4veGpIN1BsZWtDbXhiN1dFZDVIbVUwc1VSb2FFWmEwCmZvZ3pRbC9MUC9WUVlzbjNJWTFEQW9ndVhsMXNVamlqbm9hMmpiejlLb0N0LzJ2c2cxZG5wY2lOYXErSzlSSUYKeFNvWXhFMm9ybFpOQUY4TXlSMnNwVGNpRUsvWnJ4R3dBc3dRUkh2WlgxcHI1cXVqSzNQUzNXQnF0RS9FY3NtaAp6b0VFdVpyUnhPN1VBUmRuSUYvVnl1RFBrZUhSaDZQMVRaYVNZQ2xMNHNVYWxBcXIrdnp1c3NiVzlEalpNV2FoCkFnTUJBQUdqSXpBaE1BNEdBMVVkRHdFQi93UUVBd0lDcERBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQXdZRXJYUnBCU2cvVVZFVzhuUGpjN3Z4SXJNRlBVVDh6dXo1UlJidU1qdk81UwpJd0ZkWWRML0VYNlBBR3ZUTTcvRitjTk92d0FSL09JUkZrU3ZocWpoUFEvQi84MG9mWUhWR0cyeUNud3I5YndNCmxyUEVXajhhTFgvVGxzbk1kbVAxSk5ueXFiQXhhY3B2YU5kRkJObE0rUFQ2WWZEVEh6d0swZ2FGdVVWcmhxU20KUk1FeGhodGx3WG1Qak5lUG1wOXcrcEJzSHdWQ0FvdmJSNHVzdnBuTGVqb0NISG9ETEUxVzJ6T0I0eU9sNEFvUwpRYmZBS3Jicy9MN1RQb2UyRVJRR3NEUllmRUJ2ZjNwTFBFMUFrcUh3YkNoYWNpcXA2djJOcUFJc24xWFRQTnk1CjVPZ20raEZoWTJaSFpiRXNycHpvdnZHVUl5ZEJGTVBNd21VRWhNcE0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQoKLS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURDakNDQWZLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREEyTVRRd01nWURWUVFEREN0dmNHVnUKYzJocFpuUXRjMlZ5ZG1salpTMXpaWEoyYVc1bkxYTnBaMjVsY2tBeE5UVTNPRGM0TVRrMU1CNFhEVEU1TURVeApOREl6TlRZek5Wb1hEVEkwTURVeE1qSXpOVFl6Tmxvd05qRTBNRElHQTFVRUF3d3JiM0JsYm5Ob2FXWjBMWE5sCmNuWnBZMlV0YzJWeWRtbHVaeTF6YVdkdVpYSkFNVFUxTnpnM09ERTVOVENDQVNJd0RRWUpLb1pJaHZjTkFRRUIKQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUNCR1NhdGhwVzB2ekFYNzVYRXkxZ3RzTDNyVTFka0hJLzRoMW5CMTBldAoxa3lRRHhQMGVZamFBNXU5UnpZVkpjYkY0VHRmV093OGNrWFZHR2t0SlNiNVVJSGFBUTl5dHFENjVRUm1QNDFtCjNyaDFtV0Y3a3MvcFpsNUpDN3lhdk45TWtBR01IQk1COXovb0ZiWUxKVTFFc1ZLSW1ycFZPQVpGaTNVeUVLNHcKYmFoWlhGUWh1MWhreUZOZW9QbkVGZ1E5cDhDZjNJaEtMNHM5WUN3VE5HejFYYjJ4cTFoYnBlNURtK1dSYWEyVQpaaXE0VDJaNUlOVEM3UjhNb3NCLzAwaU5BUFFGV0xCd2RxUWNBa0hNWUsyeGZjcmd3ekpvakE0aFRUUzBrNzlXCjQyb1JCMFByTnBmMk5nMkFSMEVmS0ZEL3Q0OUljc0g5NmZhMjRrTmI3eGNDQXdFQUFhTWpNQ0V3RGdZRFZSMFAKQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCL3dRRk1BTUJBZjh3RFFZSktvWklodmNOQVFFTEJRQURnZ0VCQURNeQpMNjlPYVFxY1A5YWRZbWV5STNaNE9PRlJWV2xUeDJzOFNET0RYZTJTU1AyUGFEczJ6OFNyaHdJUGkxeXQvRUlVCnVsU3BtMGxvMnJ2MEdsLzN3eXMrM0Jhd2Z3cVlRYlI2eHArem11RXRTOWtHNm5EaXcwMXljQzd1T1hLN2NmNTUKNnhRcVZVNWovSm5HbFdkQUVzYnowRmdYazl6U3dDMzVEMDJpU3VuZGVYRGlDYUxwcnRBZytBWUtLemJyTUoxbAoxSHJkZ0dMTzk1QktFOEtQdjFSYSt2SWlkeW85MkkwN3ZYRks5cU8zK00reDhFbzVmSUw4aFlpcnZoSkowaDBsCm1PU0ZyY3plRUxpaGRvL2tKbE9HTVh2OEFOd2IzbjhMWlg5NTNVZGcrbkxydFA0SzBRbkNiRytlK0ExK2FTVVYKZ1VRT01ITWxPOXpSUHZkWWNobz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+                "token": "ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklpSjkuZXlKcGMzTWlPaUpyZFdKbGNtNWxkR1Z6TDNObGNuWnBZMlZoWTJOdmRXNTBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5dVlXMWxjM0JoWTJVaU9pSnljMmhwYm5raUxDSnJkV0psY201bGRHVnpMbWx2TDNObGNuWnBZMlZoWTJOdmRXNTBMM05sWTNKbGRDNXVZVzFsSWpvaVpHVm1ZWFZzZEMxMGIydGxiaTFvTjJ0eGVpSXNJbXQxWW1WeWJtVjBaWE11YVc4dmMyVnlkbWxqWldGalkyOTFiblF2YzJWeWRtbGpaUzFoWTJOdmRXNTBMbTVoYldVaU9pSmtaV1poZFd4MElpd2lhM1ZpWlhKdVpYUmxjeTVwYnk5elpYSjJhV05sWVdOamIzVnVkQzl6WlhKMmFXTmxMV0ZqWTI5MWJuUXVkV2xrSWpvaU9XUTRNR0k0TW1VdE4yRmxOUzB4TVdVNUxUbGtaV0V0TVRZMVpqTTFNek0xTVdJNElpd2ljM1ZpSWpvaWMzbHpkR1Z0T25ObGNuWnBZMlZoWTJOdmRXNTBPbkp6YUdsdWVUcGtaV1poZFd4MEluMC5QQnpOVzF3YWZDT2FEcWVrbFJHZjRIRlpIVHJDLUZINjVkWXZWcXdHTWJXQVNHQmlnMWlmX1BtX3Y2MVRtaDlndmJJeFhCZ05sa0xqRmpQWE02Y2NxMldoSndtRVVDNVlfSHZHeEo4Q05JeUhOeDJJXy1vc0JNUmlrQktsaWFBWHZBbDRLWFBLNi1FY1Zlb1dLVnppZ05oSHZBbUUzNnk3VzZCNjhtcE9vTVBqSjhiaEJfdk1KQlM3MVFocnVoYVJNQzZVREh5TzkzTmF6clpKZG5GYlQ2Qzg3eDRKTnpDNl9kNmpjNUU1UG9jRUpFUlNqdFhPNzdXNlZhZjZqZjRxUFRIMHR0cmpRSWJxZnZ4d2cyOFEtUHJsck01Wkhwblp6YnhMajJhY0xRRGdrZVZSQVVlMFRjTThJVjBlcG5SV3Eyai1QZXg3SUZIMm1nczRNZ0N1WkE="
+            },
+            "kind": "Secret",
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/service-account.name": "default",
+                    "kubernetes.io/service-account.uid": "9d80b82e-7ae5-11e9-9dea-165f353351b8"
+                },
+                "creationTimestamp": "2019-05-20T09:57:02Z",
+                "name": "default-token-h7kqz",
+                "namespace": "rshiny",
+                "resourceVersion": "162856",
+                "selfLink": "/api/v1/namespaces/rshiny/secrets/default-token-h7kqz",
+                "uid": "9d847c40-7ae5-11e9-9dea-165f353351b8"
+            },
+            "type": "kubernetes.io/service-account-token"
+        },
+        {
+            "apiVersion": "v1",
+            "data": {
+                "ca.crt": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFtTVNRd0lnWURWUVFEREJ0dmNHVnUKYzJocFpuUXRjMmxuYm1WeVFERTFOVGM0TnpneE9UUXdIaGNOTVRrd05URTBNak0xTmpNMFdoY05NalF3TlRFeQpNak0xTmpNMVdqQW1NU1F3SWdZRFZRUUREQnR2Y0dWdWMyaHBablF0YzJsbmJtVnlRREUxTlRjNE56Z3hPVFF3CmdnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURFOGFjcE8vT2dKVC9WRE5JUnY3bnMKSTNFWU5QN3ZVeFV5T3FQNTBQbDJ5M04vVGwrNVplTHJVcWpodFZyd3MzYXdvTkZpNlpzRTlOYVJKSXNHcjgvRwpZbFc3bnpjY0ZxamhkbldCNHJuY3NUd0FxWHdXa3ROZW4veGpIN1BsZWtDbXhiN1dFZDVIbVUwc1VSb2FFWmEwCmZvZ3pRbC9MUC9WUVlzbjNJWTFEQW9ndVhsMXNVamlqbm9hMmpiejlLb0N0LzJ2c2cxZG5wY2lOYXErSzlSSUYKeFNvWXhFMm9ybFpOQUY4TXlSMnNwVGNpRUsvWnJ4R3dBc3dRUkh2WlgxcHI1cXVqSzNQUzNXQnF0RS9FY3NtaAp6b0VFdVpyUnhPN1VBUmRuSUYvVnl1RFBrZUhSaDZQMVRaYVNZQ2xMNHNVYWxBcXIrdnp1c3NiVzlEalpNV2FoCkFnTUJBQUdqSXpBaE1BNEdBMVVkRHdFQi93UUVBd0lDcERBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQXdZRXJYUnBCU2cvVVZFVzhuUGpjN3Z4SXJNRlBVVDh6dXo1UlJidU1qdk81UwpJd0ZkWWRML0VYNlBBR3ZUTTcvRitjTk92d0FSL09JUkZrU3ZocWpoUFEvQi84MG9mWUhWR0cyeUNud3I5YndNCmxyUEVXajhhTFgvVGxzbk1kbVAxSk5ueXFiQXhhY3B2YU5kRkJObE0rUFQ2WWZEVEh6d0swZ2FGdVVWcmhxU20KUk1FeGhodGx3WG1Qak5lUG1wOXcrcEJzSHdWQ0FvdmJSNHVzdnBuTGVqb0NISG9ETEUxVzJ6T0I0eU9sNEFvUwpRYmZBS3Jicy9MN1RQb2UyRVJRR3NEUllmRUJ2ZjNwTFBFMUFrcUh3YkNoYWNpcXA2djJOcUFJc24xWFRQTnk1CjVPZ20raEZoWTJaSFpiRXNycHpvdnZHVUl5ZEJGTVBNd21VRWhNcE0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+                "namespace": "cnNoaW55",
+                "service-ca.crt": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFtTVNRd0lnWURWUVFEREJ0dmNHVnUKYzJocFpuUXRjMmxuYm1WeVFERTFOVGM0TnpneE9UUXdIaGNOTVRrd05URTBNak0xTmpNMFdoY05NalF3TlRFeQpNak0xTmpNMVdqQW1NU1F3SWdZRFZRUUREQnR2Y0dWdWMyaHBablF0YzJsbmJtVnlRREUxTlRjNE56Z3hPVFF3CmdnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURFOGFjcE8vT2dKVC9WRE5JUnY3bnMKSTNFWU5QN3ZVeFV5T3FQNTBQbDJ5M04vVGwrNVplTHJVcWpodFZyd3MzYXdvTkZpNlpzRTlOYVJKSXNHcjgvRwpZbFc3bnpjY0ZxamhkbldCNHJuY3NUd0FxWHdXa3ROZW4veGpIN1BsZWtDbXhiN1dFZDVIbVUwc1VSb2FFWmEwCmZvZ3pRbC9MUC9WUVlzbjNJWTFEQW9ndVhsMXNVamlqbm9hMmpiejlLb0N0LzJ2c2cxZG5wY2lOYXErSzlSSUYKeFNvWXhFMm9ybFpOQUY4TXlSMnNwVGNpRUsvWnJ4R3dBc3dRUkh2WlgxcHI1cXVqSzNQUzNXQnF0RS9FY3NtaAp6b0VFdVpyUnhPN1VBUmRuSUYvVnl1RFBrZUhSaDZQMVRaYVNZQ2xMNHNVYWxBcXIrdnp1c3NiVzlEalpNV2FoCkFnTUJBQUdqSXpBaE1BNEdBMVVkRHdFQi93UUVBd0lDcERBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQXdZRXJYUnBCU2cvVVZFVzhuUGpjN3Z4SXJNRlBVVDh6dXo1UlJidU1qdk81UwpJd0ZkWWRML0VYNlBBR3ZUTTcvRitjTk92d0FSL09JUkZrU3ZocWpoUFEvQi84MG9mWUhWR0cyeUNud3I5YndNCmxyUEVXajhhTFgvVGxzbk1kbVAxSk5ueXFiQXhhY3B2YU5kRkJObE0rUFQ2WWZEVEh6d0swZ2FGdVVWcmhxU20KUk1FeGhodGx3WG1Qak5lUG1wOXcrcEJzSHdWQ0FvdmJSNHVzdnBuTGVqb0NISG9ETEUxVzJ6T0I0eU9sNEFvUwpRYmZBS3Jicy9MN1RQb2UyRVJRR3NEUllmRUJ2ZjNwTFBFMUFrcUh3YkNoYWNpcXA2djJOcUFJc24xWFRQTnk1CjVPZ20raEZoWTJaSFpiRXNycHpvdnZHVUl5ZEJGTVBNd21VRWhNcE0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQoKLS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURDakNDQWZLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREEyTVRRd01nWURWUVFEREN0dmNHVnUKYzJocFpuUXRjMlZ5ZG1salpTMXpaWEoyYVc1bkxYTnBaMjVsY2tBeE5UVTNPRGM0TVRrMU1CNFhEVEU1TURVeApOREl6TlRZek5Wb1hEVEkwTURVeE1qSXpOVFl6Tmxvd05qRTBNRElHQTFVRUF3d3JiM0JsYm5Ob2FXWjBMWE5sCmNuWnBZMlV0YzJWeWRtbHVaeTF6YVdkdVpYSkFNVFUxTnpnM09ERTVOVENDQVNJd0RRWUpLb1pJaHZjTkFRRUIKQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUNCR1NhdGhwVzB2ekFYNzVYRXkxZ3RzTDNyVTFka0hJLzRoMW5CMTBldAoxa3lRRHhQMGVZamFBNXU5UnpZVkpjYkY0VHRmV093OGNrWFZHR2t0SlNiNVVJSGFBUTl5dHFENjVRUm1QNDFtCjNyaDFtV0Y3a3MvcFpsNUpDN3lhdk45TWtBR01IQk1COXovb0ZiWUxKVTFFc1ZLSW1ycFZPQVpGaTNVeUVLNHcKYmFoWlhGUWh1MWhreUZOZW9QbkVGZ1E5cDhDZjNJaEtMNHM5WUN3VE5HejFYYjJ4cTFoYnBlNURtK1dSYWEyVQpaaXE0VDJaNUlOVEM3UjhNb3NCLzAwaU5BUFFGV0xCd2RxUWNBa0hNWUsyeGZjcmd3ekpvakE0aFRUUzBrNzlXCjQyb1JCMFByTnBmMk5nMkFSMEVmS0ZEL3Q0OUljc0g5NmZhMjRrTmI3eGNDQXdFQUFhTWpNQ0V3RGdZRFZSMFAKQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCL3dRRk1BTUJBZjh3RFFZSktvWklodmNOQVFFTEJRQURnZ0VCQURNeQpMNjlPYVFxY1A5YWRZbWV5STNaNE9PRlJWV2xUeDJzOFNET0RYZTJTU1AyUGFEczJ6OFNyaHdJUGkxeXQvRUlVCnVsU3BtMGxvMnJ2MEdsLzN3eXMrM0Jhd2Z3cVlRYlI2eHArem11RXRTOWtHNm5EaXcwMXljQzd1T1hLN2NmNTUKNnhRcVZVNWovSm5HbFdkQUVzYnowRmdYazl6U3dDMzVEMDJpU3VuZGVYRGlDYUxwcnRBZytBWUtLemJyTUoxbAoxSHJkZ0dMTzk1QktFOEtQdjFSYSt2SWlkeW85MkkwN3ZYRks5cU8zK00reDhFbzVmSUw4aFlpcnZoSkowaDBsCm1PU0ZyY3plRUxpaGRvL2tKbE9HTVh2OEFOd2IzbjhMWlg5NTNVZGcrbkxydFA0SzBRbkNiRytlK0ExK2FTVVYKZ1VRT01ITWxPOXpSUHZkWWNobz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+                "token": "ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklpSjkuZXlKcGMzTWlPaUpyZFdKbGNtNWxkR1Z6TDNObGNuWnBZMlZoWTJOdmRXNTBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5dVlXMWxjM0JoWTJVaU9pSnljMmhwYm5raUxDSnJkV0psY201bGRHVnpMbWx2TDNObGNuWnBZMlZoWTJOdmRXNTBMM05sWTNKbGRDNXVZVzFsSWpvaVpHVm1ZWFZzZEMxMGIydGxiaTF6T1hGblpDSXNJbXQxWW1WeWJtVjBaWE11YVc4dmMyVnlkbWxqWldGalkyOTFiblF2YzJWeWRtbGpaUzFoWTJOdmRXNTBMbTVoYldVaU9pSmtaV1poZFd4MElpd2lhM1ZpWlhKdVpYUmxjeTVwYnk5elpYSjJhV05sWVdOamIzVnVkQzl6WlhKMmFXTmxMV0ZqWTI5MWJuUXVkV2xrSWpvaU9XUTRNR0k0TW1VdE4yRmxOUzB4TVdVNUxUbGtaV0V0TVRZMVpqTTFNek0xTVdJNElpd2ljM1ZpSWpvaWMzbHpkR1Z0T25ObGNuWnBZMlZoWTJOdmRXNTBPbkp6YUdsdWVUcGtaV1poZFd4MEluMC5sR01ieUJHcWUzaVRzNDNUUk5uMHZCSGM3LXRoR1JYVGE5VXBvRktiSU1BRnhSWTYxRFUzdTVvWi1BLWRCVG5nUXpBNGtJeFlwdHFzZGhiVzZWUFBVUnBwdFdUVGN5YkFuNXRMQ1pUdmVjV3VRSTJodFRFeFF5Q2lTQlozVEFHTTNBblNIT3QzcDE2SUZnNGhqZURpQ0kyVkJXWmh0b1hLVjBhaW91Y0RyVUdIY1hnT2ktUGZSbXA5NHFzcFkxeXZ6N0tweTFEZEtkSVdNSkRRTlhvZ1VLRVdCem5vdGNRVkFoTnBqU2RWVGVrN1pjM0dzRGh0TzJYbUJkR1BiMEtKeVR4TExsWEJ2VG5UZ2l3Skc1amVGX2NUY3ZNYmlwd3kwOWxDY2VJMldKSzNEcU85RGl4ZHVLNG03SlhUU1FuTERFcDNVQjZuTENQcDNrT281MFA0dnc="
+            },
+            "kind": "Secret",
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "openshift.io/create-dockercfg-secrets",
+                    "kubernetes.io/service-account.name": "default",
+                    "kubernetes.io/service-account.uid": "9d80b82e-7ae5-11e9-9dea-165f353351b8"
+                },
+                "creationTimestamp": "2019-05-20T09:57:02Z",
+                "name": "default-token-s9qgd",
+                "namespace": "rshiny",
+                "resourceVersion": "162871",
+                "selfLink": "/api/v1/namespaces/rshiny/secrets/default-token-s9qgd",
+                "uid": "9d8716c2-7ae5-11e9-9dea-165f353351b8"
+            },
+            "type": "kubernetes.io/service-account-token"
+        },
+        {
+            "apiVersion": "v1",
+            "data": {
+                ".dockercfg": "eyIxNzIuMzAuMjI0LjIxODo1MDAwIjp7InVzZXJuYW1lIjoic2VydmljZWFjY291bnQiLCJwYXNzd29yZCI6ImV5SmhiR2NpT2lKU1V6STFOaUlzSW10cFpDSTZJaUo5LmV5SnBjM01pT2lKcmRXSmxjbTVsZEdWekwzTmxjblpwWTJWaFkyTnZkVzUwSWl3aWEzVmlaWEp1WlhSbGN5NXBieTl6WlhKMmFXTmxZV05qYjNWdWRDOXVZVzFsYzNCaFkyVWlPaUp5YzJocGJua2lMQ0pyZFdKbGNtNWxkR1Z6TG1sdkwzTmxjblpwWTJWaFkyTnZkVzUwTDNObFkzSmxkQzV1WVcxbElqb2laR1Z3Ykc5NVpYSXRkRzlyWlc0dE5uQndhbWdpTENKcmRXSmxjbTVsZEdWekxtbHZMM05sY25acFkyVmhZMk52ZFc1MEwzTmxjblpwWTJVdFlXTmpiM1Z1ZEM1dVlXMWxJam9pWkdWd2JHOTVaWElpTENKcmRXSmxjbTVsZEdWekxtbHZMM05sY25acFkyVmhZMk52ZFc1MEwzTmxjblpwWTJVdFlXTmpiM1Z1ZEM1MWFXUWlPaUk1WkRneU5EUTRNaTAzWVdVMUxURXhaVGt0T1dSbFlTMHhOalZtTXpVek16VXhZamdpTENKemRXSWlPaUp6ZVhOMFpXMDZjMlZ5ZG1salpXRmpZMjkxYm5RNmNuTm9hVzU1T21SbGNHeHZlV1Z5SW4wLml2TTdBTlJMalpMVWJSZ1EtZ2Y5aWVpdHpEOFZoQS1SZWFlNjJJb3RQSHhlNGJlRjdSQ0pzUGtXWWs1SVNfM3o5NXBxcmExY0hPS3llZ1h1RnhJVmlMZWJZcDlYZGJwZGdCeXdHYjc4WWdFdXN6eWVMWWo3OVhnTURoQTc3NUFGa3NiVTF4NVI2ZXk0eFlfbzhaLUtHX2w2c09IczJnWk9XSmI0WmU3WFJlVXhDT2p0MEpGamw4VFRpSlRWR3Z3RHBqd085SDI5TTFlRmZtR29lWEVyV2RJcFNaVy1TTDBOSlFLYVAwMkVnS090ejFleFp6YlFOZ1pfdnVRQVBNV2g0b3N6ZVVnRWRFZGFTWTQzOVlaUHNXcjBsdTRPOEhBM01QTmdkMGNqcktyLWptUGNSRTBrbmM0dGR0eDNxM29zOHFndTJ2S093NkpNWmUxdG5JdGl5ZyIsImVtYWlsIjoic2VydmljZWFjY291bnRAZXhhbXBsZS5vcmciLCJhdXRoIjoiYzJWeWRtbGpaV0ZqWTI5MWJuUTZaWGxLYUdKSFkybFBhVXBUVlhwSk1VNXBTWE5KYlhSd1drTkpOa2xwU2prdVpYbEtjR016VFdsUGFVcHlaRmRLYkdOdE5XeGtSMVo2VEROT2JHTnVXbkJaTWxab1dUSk9kbVJYTlRCSmFYZHBZVE5XYVZwWVNuVmFXRkpzWTNrMWNHSjVPWHBhV0VveVlWZE9iRmxYVG1waU0xWjFaRU01ZFZsWE1XeGpNMEpvV1RKVmFVOXBTbmxqTW1od1ltNXJhVXhEU25Ka1YwcHNZMjAxYkdSSFZucE1iV3gyVEROT2JHTnVXbkJaTWxab1dUSk9kbVJYTlRCTU0wNXNXVE5LYkdSRE5YVlpWekZzU1dwdmFWcEhWbmRpUnprMVdsaEpkR1JIT1hKYVZ6UjBUbTVDZDJGdFoybE1RMHB5WkZkS2JHTnROV3hrUjFaNlRHMXNka3d6VG14amJscHdXVEpXYUZreVRuWmtWelV3VEROT2JHTnVXbkJaTWxWMFdWZE9hbUl6Vm5Wa1F6VjFXVmN4YkVscWIybGFSMVozWWtjNU5WcFlTV2xNUTBweVpGZEtiR050Tld4a1IxWjZURzFzZGt3elRteGpibHB3V1RKV2FGa3lUblprVnpVd1RETk9iR051V25CWk1sVjBXVmRPYW1JelZuVmtRelV4WVZkUmFVOXBTVFZhUkdkNVRrUlJORTFwTUROWlYxVXhURlJGZUZwVWEzUlBWMUpzV1ZNd2VFNXFWbTFOZWxWNlRYcFZlRmxxWjJsTVEwcDZaRmRKYVU5cFNucGxXRTR3V2xjd05tTXlWbmxrYld4cVdsZEdhbGt5T1RGaWJsRTJZMjVPYjJGWE5UVlBiVkpzWTBkNGRtVlhWbmxKYmpBdWFYWk5OMEZPVWt4cVdreFZZbEpuVVMxblpqbHBaV2wwZWtRNFZtaEJMVkpsWVdVMk1rbHZkRkJJZUdVMFltVkdOMUpEU25OUWExZFphelZKVTE4emVqazFjSEZ5WVRGalNFOUxlV1ZuV0hWR2VFbFdhVXhsWWxsd09WaGtZbkJrWjBKNWQwZGlOemhaWjBWMWMzcDVaVXhaYWpjNVdHZE5SR2hCTnpjMVFVWnJjMkpWTVhnMVVqWmxlVFI0V1Y5dk9Gb3RTMGRmYkRaelQwaHpNbWRhVDFkS1lqUmFaVGRZVW1WVmVFTlBhblF3U2tacWJEaFVWR2xLVkZaSGRuZEVjR3AzVHpsSU1qbE5NV1ZHWm0xSGIyVllSWEpYWkVsd1UxcFhMVk5NTUU1S1VVdGhVREF5UldkTFQzUjZNV1Y0V25waVVVNW5XbDkyZFZGQlVFMVhhRFJ2YzNwbFZXZEZaRVZrWVZOWk5ETTVXVnBRYzFkeU1HeDFORTg0U0VFelRWQk9aMlF3WTJweVMzSXRhbTFRWTFKRk1HdHVZelIwWkhSNE0zRXpiM000Y1dkMU1uWkxUM2MyU2sxYVpURjBia2wwYVhsbiJ9LCJkb2NrZXItcmVnaXN0cnkuZGVmYXVsdC5zdmMuY2x1c3Rlci5sb2NhbDo1MDAwIjp7InVzZXJuYW1lIjoic2VydmljZWFjY291bnQiLCJwYXNzd29yZCI6ImV5SmhiR2NpT2lKU1V6STFOaUlzSW10cFpDSTZJaUo5LmV5SnBjM01pT2lKcmRXSmxjbTVsZEdWekwzTmxjblpwWTJWaFkyTnZkVzUwSWl3aWEzVmlaWEp1WlhSbGN5NXBieTl6WlhKMmFXTmxZV05qYjNWdWRDOXVZVzFsYzNCaFkyVWlPaUp5YzJocGJua2lMQ0pyZFdKbGNtNWxkR1Z6TG1sdkwzTmxjblpwWTJWaFkyTnZkVzUwTDNObFkzSmxkQzV1WVcxbElqb2laR1Z3Ykc5NVpYSXRkRzlyWlc0dE5uQndhbWdpTENKcmRXSmxjbTVsZEdWekxtbHZMM05sY25acFkyVmhZMk52ZFc1MEwzTmxjblpwWTJVdFlXTmpiM1Z1ZEM1dVlXMWxJam9pWkdWd2JHOTVaWElpTENKcmRXSmxjbTVsZEdWekxtbHZMM05sY25acFkyVmhZMk52ZFc1MEwzTmxjblpwWTJVdFlXTmpiM1Z1ZEM1MWFXUWlPaUk1WkRneU5EUTRNaTAzWVdVMUxURXhaVGt0T1dSbFlTMHhOalZtTXpVek16VXhZamdpTENKemRXSWlPaUp6ZVhOMFpXMDZjMlZ5ZG1salpXRmpZMjkxYm5RNmNuTm9hVzU1T21SbGNHeHZlV1Z5SW4wLml2TTdBTlJMalpMVWJSZ1EtZ2Y5aWVpdHpEOFZoQS1SZWFlNjJJb3RQSHhlNGJlRjdSQ0pzUGtXWWs1SVNfM3o5NXBxcmExY0hPS3llZ1h1RnhJVmlMZWJZcDlYZGJwZGdCeXdHYjc4WWdFdXN6eWVMWWo3OVhnTURoQTc3NUFGa3NiVTF4NVI2ZXk0eFlfbzhaLUtHX2w2c09IczJnWk9XSmI0WmU3WFJlVXhDT2p0MEpGamw4VFRpSlRWR3Z3RHBqd085SDI5TTFlRmZtR29lWEVyV2RJcFNaVy1TTDBOSlFLYVAwMkVnS090ejFleFp6YlFOZ1pfdnVRQVBNV2g0b3N6ZVVnRWRFZGFTWTQzOVlaUHNXcjBsdTRPOEhBM01QTmdkMGNqcktyLWptUGNSRTBrbmM0dGR0eDNxM29zOHFndTJ2S093NkpNWmUxdG5JdGl5ZyIsImVtYWlsIjoic2VydmljZWFjY291bnRAZXhhbXBsZS5vcmciLCJhdXRoIjoiYzJWeWRtbGpaV0ZqWTI5MWJuUTZaWGxLYUdKSFkybFBhVXBUVlhwSk1VNXBTWE5KYlhSd1drTkpOa2xwU2prdVpYbEtjR016VFdsUGFVcHlaRmRLYkdOdE5XeGtSMVo2VEROT2JHTnVXbkJaTWxab1dUSk9kbVJYTlRCSmFYZHBZVE5XYVZwWVNuVmFXRkpzWTNrMWNHSjVPWHBhV0VveVlWZE9iRmxYVG1waU0xWjFaRU01ZFZsWE1XeGpNMEpvV1RKVmFVOXBTbmxqTW1od1ltNXJhVXhEU25Ka1YwcHNZMjAxYkdSSFZucE1iV3gyVEROT2JHTnVXbkJaTWxab1dUSk9kbVJYTlRCTU0wNXNXVE5LYkdSRE5YVlpWekZzU1dwdmFWcEhWbmRpUnprMVdsaEpkR1JIT1hKYVZ6UjBUbTVDZDJGdFoybE1RMHB5WkZkS2JHTnROV3hrUjFaNlRHMXNka3d6VG14amJscHdXVEpXYUZreVRuWmtWelV3VEROT2JHTnVXbkJaTWxWMFdWZE9hbUl6Vm5Wa1F6VjFXVmN4YkVscWIybGFSMVozWWtjNU5WcFlTV2xNUTBweVpGZEtiR050Tld4a1IxWjZURzFzZGt3elRteGpibHB3V1RKV2FGa3lUblprVnpVd1RETk9iR051V25CWk1sVjBXVmRPYW1JelZuVmtRelV4WVZkUmFVOXBTVFZhUkdkNVRrUlJORTFwTUROWlYxVXhURlJGZUZwVWEzUlBWMUpzV1ZNd2VFNXFWbTFOZWxWNlRYcFZlRmxxWjJsTVEwcDZaRmRKYVU5cFNucGxXRTR3V2xjd05tTXlWbmxrYld4cVdsZEdhbGt5T1RGaWJsRTJZMjVPYjJGWE5UVlBiVkpzWTBkNGRtVlhWbmxKYmpBdWFYWk5OMEZPVWt4cVdreFZZbEpuVVMxblpqbHBaV2wwZWtRNFZtaEJMVkpsWVdVMk1rbHZkRkJJZUdVMFltVkdOMUpEU25OUWExZFphelZKVTE4emVqazFjSEZ5WVRGalNFOUxlV1ZuV0hWR2VFbFdhVXhsWWxsd09WaGtZbkJrWjBKNWQwZGlOemhaWjBWMWMzcDVaVXhaYWpjNVdHZE5SR2hCTnpjMVFVWnJjMkpWTVhnMVVqWmxlVFI0V1Y5dk9Gb3RTMGRmYkRaelQwaHpNbWRhVDFkS1lqUmFaVGRZVW1WVmVFTlBhblF3U2tacWJEaFVWR2xLVkZaSGRuZEVjR3AzVHpsSU1qbE5NV1ZHWm0xSGIyVllSWEpYWkVsd1UxcFhMVk5NTUU1S1VVdGhVREF5UldkTFQzUjZNV1Y0V25waVVVNW5XbDkyZFZGQlVFMVhhRFJ2YzNwbFZXZEZaRVZrWVZOWk5ETTVXVnBRYzFkeU1HeDFORTg0U0VFelRWQk9aMlF3WTJweVMzSXRhbTFRWTFKRk1HdHVZelIwWkhSNE0zRXpiM000Y1dkMU1uWkxUM2MyU2sxYVpURjBia2wwYVhsbiJ9LCJkb2NrZXItcmVnaXN0cnkuZGVmYXVsdC5zdmM6NTAwMCI6eyJ1c2VybmFtZSI6InNlcnZpY2VhY2NvdW50IiwicGFzc3dvcmQiOiJleUpoYkdjaU9pSlNVekkxTmlJc0ltdHBaQ0k2SWlKOS5leUpwYzNNaU9pSnJkV0psY201bGRHVnpMM05sY25acFkyVmhZMk52ZFc1MElpd2lhM1ZpWlhKdVpYUmxjeTVwYnk5elpYSjJhV05sWVdOamIzVnVkQzl1WVcxbGMzQmhZMlVpT2lKeWMyaHBibmtpTENKcmRXSmxjbTVsZEdWekxtbHZMM05sY25acFkyVmhZMk52ZFc1MEwzTmxZM0psZEM1dVlXMWxJam9pWkdWd2JHOTVaWEl0ZEc5clpXNHRObkJ3YW1naUxDSnJkV0psY201bGRHVnpMbWx2TDNObGNuWnBZMlZoWTJOdmRXNTBMM05sY25acFkyVXRZV05qYjNWdWRDNXVZVzFsSWpvaVpHVndiRzk1WlhJaUxDSnJkV0psY201bGRHVnpMbWx2TDNObGNuWnBZMlZoWTJOdmRXNTBMM05sY25acFkyVXRZV05qYjNWdWRDNTFhV1FpT2lJNVpEZ3lORFE0TWkwM1lXVTFMVEV4WlRrdE9XUmxZUzB4TmpWbU16VXpNelV4WWpnaUxDSnpkV0lpT2lKemVYTjBaVzA2YzJWeWRtbGpaV0ZqWTI5MWJuUTZjbk5vYVc1NU9tUmxjR3h2ZVdWeUluMC5pdk03QU5STGpaTFViUmdRLWdmOWllaXR6RDhWaEEtUmVhZTYySW90UEh4ZTRiZUY3UkNKc1BrV1lrNUlTXzN6OTVwcXJhMWNIT0t5ZWdYdUZ4SVZpTGViWXA5WGRicGRnQnl3R2I3OFlnRXVzenllTFlqNzlYZ01EaEE3NzVBRmtzYlUxeDVSNmV5NHhZX284Wi1LR19sNnNPSHMyZ1pPV0piNFplN1hSZVV4Q09qdDBKRmpsOFRUaUpUVkd2d0RwandPOUgyOU0xZUZmbUdvZVhFcldkSXBTWlctU0wwTkpRS2FQMDJFZ0tPdHoxZXhaemJRTmdaX3Z1UUFQTVdoNG9zemVVZ0VkRWRhU1k0MzlZWlBzV3IwbHU0TzhIQTNNUE5nZDBjanJLci1qbVBjUkUwa25jNHRkdHgzcTNvczhxZ3UydktPdzZKTVplMXRuSXRpeWciLCJlbWFpbCI6InNlcnZpY2VhY2NvdW50QGV4YW1wbGUub3JnIiwiYXV0aCI6ImMyVnlkbWxqWldGalkyOTFiblE2WlhsS2FHSkhZMmxQYVVwVFZYcEpNVTVwU1hOSmJYUndXa05KTmtscFNqa3VaWGxLY0dNelRXbFBhVXB5WkZkS2JHTnROV3hrUjFaNlRETk9iR051V25CWk1sWm9XVEpPZG1SWE5UQkphWGRwWVROV2FWcFlTblZhV0ZKc1kzazFjR0o1T1hwYVdFb3lZVmRPYkZsWFRtcGlNMVoxWkVNNWRWbFhNV3hqTTBKb1dUSlZhVTlwU25sak1taHdZbTVyYVV4RFNuSmtWMHBzWTIwMWJHUkhWbnBNYld4MlRETk9iR051V25CWk1sWm9XVEpPZG1SWE5UQk1NMDVzV1ROS2JHUkROWFZaVnpGc1NXcHZhVnBIVm5kaVJ6azFXbGhKZEdSSE9YSmFWelIwVG01Q2QyRnRaMmxNUTBweVpGZEtiR050Tld4a1IxWjZURzFzZGt3elRteGpibHB3V1RKV2FGa3lUblprVnpVd1RETk9iR051V25CWk1sVjBXVmRPYW1JelZuVmtRelYxV1ZjeGJFbHFiMmxhUjFaM1lrYzVOVnBZU1dsTVEwcHlaRmRLYkdOdE5XeGtSMVo2VEcxc2Rrd3pUbXhqYmxwd1dUSldhRmt5VG5aa1Z6VXdURE5PYkdOdVduQlpNbFYwV1ZkT2FtSXpWblZrUXpVeFlWZFJhVTlwU1RWYVJHZDVUa1JSTkUxcE1ETlpWMVV4VEZSRmVGcFVhM1JQVjFKc1dWTXdlRTVxVm0xTmVsVjZUWHBWZUZscVoybE1RMHA2WkZkSmFVOXBTbnBsV0U0d1dsY3dObU15Vm5sa2JXeHFXbGRHYWxreU9URmlibEUyWTI1T2IyRlhOVFZQYlZKc1kwZDRkbVZYVm5sSmJqQXVhWFpOTjBGT1VreHFXa3hWWWxKblVTMW5aamxwWldsMGVrUTRWbWhCTFZKbFlXVTJNa2x2ZEZCSWVHVTBZbVZHTjFKRFNuTlFhMWRaYXpWSlUxOHplamsxY0hGeVlURmpTRTlMZVdWbldIVkdlRWxXYVV4bFlsbHdPVmhrWW5Ca1owSjVkMGRpTnpoWlowVjFjM3A1WlV4WmFqYzVXR2ROUkdoQk56YzFRVVpyYzJKVk1YZzFValpsZVRSNFdWOXZPRm90UzBkZmJEWnpUMGh6TW1kYVQxZEtZalJhWlRkWVVtVlZlRU5QYW5Rd1NrWnFiRGhVVkdsS1ZGWkhkbmRFY0dwM1R6bElNamxOTVdWR1ptMUhiMlZZUlhKWFpFbHdVMXBYTFZOTU1FNUtVVXRoVURBeVJXZExUM1I2TVdWNFducGlVVTVuV2w5MmRWRkJVRTFYYURSdmMzcGxWV2RGWkVWa1lWTlpORE01V1ZwUWMxZHlNR3gxTkU4NFNFRXpUVkJPWjJRd1kycHlTM0l0YW0xUVkxSkZNR3R1WXpSMFpIUjRNM0V6YjNNNGNXZDFNblpMVDNjMlNrMWFaVEYwYmtsMGFYbG4ifX0="
+            },
+            "kind": "Secret",
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/service-account.name": "deployer",
+                    "kubernetes.io/service-account.uid": "9d824482-7ae5-11e9-9dea-165f353351b8",
+                    "openshift.io/token-secret.name": "deployer-token-6ppjh",
+                    "openshift.io/token-secret.value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJyc2hpbnkiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlY3JldC5uYW1lIjoiZGVwbG95ZXItdG9rZW4tNnBwamgiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGVwbG95ZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiI5ZDgyNDQ4Mi03YWU1LTExZTktOWRlYS0xNjVmMzUzMzUxYjgiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6cnNoaW55OmRlcGxveWVyIn0.ivM7ANRLjZLUbRgQ-gf9ieitzD8VhA-Reae62IotPHxe4beF7RCJsPkWYk5IS_3z95pqra1cHOKyegXuFxIViLebYp9XdbpdgBywGb78YgEuszyeLYj79XgMDhA775AFksbU1x5R6ey4xY_o8Z-KG_l6sOHs2gZOWJb4Ze7XReUxCOjt0JFjl8TTiJTVGvwDpjwO9H29M1eFfmGoeXErWdIpSZW-SL0NJQKaP02EgKOtz1exZzbQNgZ_vuQAPMWh4oszeUgEdEdaSY439YZPsWr0lu4O8HA3MPNgd0cjrKr-jmPcRE0knc4tdtx3q3os8qgu2vKOw6JMZe1tnItiyg"
+                },
+                "creationTimestamp": "2019-05-20T09:57:02Z",
+                "name": "deployer-dockercfg-nzskn",
+                "namespace": "rshiny",
+                "resourceVersion": "162879",
+                "selfLink": "/api/v1/namespaces/rshiny/secrets/deployer-dockercfg-nzskn",
+                "uid": "9d8fd68b-7ae5-11e9-9dea-165f353351b8"
+            },
+            "type": "kubernetes.io/dockercfg"
+        },
+        {
+            "apiVersion": "v1",
+            "data": {
+                "ca.crt": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFtTVNRd0lnWURWUVFEREJ0dmNHVnUKYzJocFpuUXRjMmxuYm1WeVFERTFOVGM0TnpneE9UUXdIaGNOTVRrd05URTBNak0xTmpNMFdoY05NalF3TlRFeQpNak0xTmpNMVdqQW1NU1F3SWdZRFZRUUREQnR2Y0dWdWMyaHBablF0YzJsbmJtVnlRREUxTlRjNE56Z3hPVFF3CmdnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURFOGFjcE8vT2dKVC9WRE5JUnY3bnMKSTNFWU5QN3ZVeFV5T3FQNTBQbDJ5M04vVGwrNVplTHJVcWpodFZyd3MzYXdvTkZpNlpzRTlOYVJKSXNHcjgvRwpZbFc3bnpjY0ZxamhkbldCNHJuY3NUd0FxWHdXa3ROZW4veGpIN1BsZWtDbXhiN1dFZDVIbVUwc1VSb2FFWmEwCmZvZ3pRbC9MUC9WUVlzbjNJWTFEQW9ndVhsMXNVamlqbm9hMmpiejlLb0N0LzJ2c2cxZG5wY2lOYXErSzlSSUYKeFNvWXhFMm9ybFpOQUY4TXlSMnNwVGNpRUsvWnJ4R3dBc3dRUkh2WlgxcHI1cXVqSzNQUzNXQnF0RS9FY3NtaAp6b0VFdVpyUnhPN1VBUmRuSUYvVnl1RFBrZUhSaDZQMVRaYVNZQ2xMNHNVYWxBcXIrdnp1c3NiVzlEalpNV2FoCkFnTUJBQUdqSXpBaE1BNEdBMVVkRHdFQi93UUVBd0lDcERBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQXdZRXJYUnBCU2cvVVZFVzhuUGpjN3Z4SXJNRlBVVDh6dXo1UlJidU1qdk81UwpJd0ZkWWRML0VYNlBBR3ZUTTcvRitjTk92d0FSL09JUkZrU3ZocWpoUFEvQi84MG9mWUhWR0cyeUNud3I5YndNCmxyUEVXajhhTFgvVGxzbk1kbVAxSk5ueXFiQXhhY3B2YU5kRkJObE0rUFQ2WWZEVEh6d0swZ2FGdVVWcmhxU20KUk1FeGhodGx3WG1Qak5lUG1wOXcrcEJzSHdWQ0FvdmJSNHVzdnBuTGVqb0NISG9ETEUxVzJ6T0I0eU9sNEFvUwpRYmZBS3Jicy9MN1RQb2UyRVJRR3NEUllmRUJ2ZjNwTFBFMUFrcUh3YkNoYWNpcXA2djJOcUFJc24xWFRQTnk1CjVPZ20raEZoWTJaSFpiRXNycHpvdnZHVUl5ZEJGTVBNd21VRWhNcE0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+                "namespace": "cnNoaW55",
+                "service-ca.crt": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFtTVNRd0lnWURWUVFEREJ0dmNHVnUKYzJocFpuUXRjMmxuYm1WeVFERTFOVGM0TnpneE9UUXdIaGNOTVRrd05URTBNak0xTmpNMFdoY05NalF3TlRFeQpNak0xTmpNMVdqQW1NU1F3SWdZRFZRUUREQnR2Y0dWdWMyaHBablF0YzJsbmJtVnlRREUxTlRjNE56Z3hPVFF3CmdnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURFOGFjcE8vT2dKVC9WRE5JUnY3bnMKSTNFWU5QN3ZVeFV5T3FQNTBQbDJ5M04vVGwrNVplTHJVcWpodFZyd3MzYXdvTkZpNlpzRTlOYVJKSXNHcjgvRwpZbFc3bnpjY0ZxamhkbldCNHJuY3NUd0FxWHdXa3ROZW4veGpIN1BsZWtDbXhiN1dFZDVIbVUwc1VSb2FFWmEwCmZvZ3pRbC9MUC9WUVlzbjNJWTFEQW9ndVhsMXNVamlqbm9hMmpiejlLb0N0LzJ2c2cxZG5wY2lOYXErSzlSSUYKeFNvWXhFMm9ybFpOQUY4TXlSMnNwVGNpRUsvWnJ4R3dBc3dRUkh2WlgxcHI1cXVqSzNQUzNXQnF0RS9FY3NtaAp6b0VFdVpyUnhPN1VBUmRuSUYvVnl1RFBrZUhSaDZQMVRaYVNZQ2xMNHNVYWxBcXIrdnp1c3NiVzlEalpNV2FoCkFnTUJBQUdqSXpBaE1BNEdBMVVkRHdFQi93UUVBd0lDcERBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQXdZRXJYUnBCU2cvVVZFVzhuUGpjN3Z4SXJNRlBVVDh6dXo1UlJidU1qdk81UwpJd0ZkWWRML0VYNlBBR3ZUTTcvRitjTk92d0FSL09JUkZrU3ZocWpoUFEvQi84MG9mWUhWR0cyeUNud3I5YndNCmxyUEVXajhhTFgvVGxzbk1kbVAxSk5ueXFiQXhhY3B2YU5kRkJObE0rUFQ2WWZEVEh6d0swZ2FGdVVWcmhxU20KUk1FeGhodGx3WG1Qak5lUG1wOXcrcEJzSHdWQ0FvdmJSNHVzdnBuTGVqb0NISG9ETEUxVzJ6T0I0eU9sNEFvUwpRYmZBS3Jicy9MN1RQb2UyRVJRR3NEUllmRUJ2ZjNwTFBFMUFrcUh3YkNoYWNpcXA2djJOcUFJc24xWFRQTnk1CjVPZ20raEZoWTJaSFpiRXNycHpvdnZHVUl5ZEJGTVBNd21VRWhNcE0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQoKLS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURDakNDQWZLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREEyTVRRd01nWURWUVFEREN0dmNHVnUKYzJocFpuUXRjMlZ5ZG1salpTMXpaWEoyYVc1bkxYTnBaMjVsY2tBeE5UVTNPRGM0TVRrMU1CNFhEVEU1TURVeApOREl6TlRZek5Wb1hEVEkwTURVeE1qSXpOVFl6Tmxvd05qRTBNRElHQTFVRUF3d3JiM0JsYm5Ob2FXWjBMWE5sCmNuWnBZMlV0YzJWeWRtbHVaeTF6YVdkdVpYSkFNVFUxTnpnM09ERTVOVENDQVNJd0RRWUpLb1pJaHZjTkFRRUIKQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUNCR1NhdGhwVzB2ekFYNzVYRXkxZ3RzTDNyVTFka0hJLzRoMW5CMTBldAoxa3lRRHhQMGVZamFBNXU5UnpZVkpjYkY0VHRmV093OGNrWFZHR2t0SlNiNVVJSGFBUTl5dHFENjVRUm1QNDFtCjNyaDFtV0Y3a3MvcFpsNUpDN3lhdk45TWtBR01IQk1COXovb0ZiWUxKVTFFc1ZLSW1ycFZPQVpGaTNVeUVLNHcKYmFoWlhGUWh1MWhreUZOZW9QbkVGZ1E5cDhDZjNJaEtMNHM5WUN3VE5HejFYYjJ4cTFoYnBlNURtK1dSYWEyVQpaaXE0VDJaNUlOVEM3UjhNb3NCLzAwaU5BUFFGV0xCd2RxUWNBa0hNWUsyeGZjcmd3ekpvakE0aFRUUzBrNzlXCjQyb1JCMFByTnBmMk5nMkFSMEVmS0ZEL3Q0OUljc0g5NmZhMjRrTmI3eGNDQXdFQUFhTWpNQ0V3RGdZRFZSMFAKQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCL3dRRk1BTUJBZjh3RFFZSktvWklodmNOQVFFTEJRQURnZ0VCQURNeQpMNjlPYVFxY1A5YWRZbWV5STNaNE9PRlJWV2xUeDJzOFNET0RYZTJTU1AyUGFEczJ6OFNyaHdJUGkxeXQvRUlVCnVsU3BtMGxvMnJ2MEdsLzN3eXMrM0Jhd2Z3cVlRYlI2eHArem11RXRTOWtHNm5EaXcwMXljQzd1T1hLN2NmNTUKNnhRcVZVNWovSm5HbFdkQUVzYnowRmdYazl6U3dDMzVEMDJpU3VuZGVYRGlDYUxwcnRBZytBWUtLemJyTUoxbAoxSHJkZ0dMTzk1QktFOEtQdjFSYSt2SWlkeW85MkkwN3ZYRks5cU8zK00reDhFbzVmSUw4aFlpcnZoSkowaDBsCm1PU0ZyY3plRUxpaGRvL2tKbE9HTVh2OEFOd2IzbjhMWlg5NTNVZGcrbkxydFA0SzBRbkNiRytlK0ExK2FTVVYKZ1VRT01ITWxPOXpSUHZkWWNobz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+                "token": "ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklpSjkuZXlKcGMzTWlPaUpyZFdKbGNtNWxkR1Z6TDNObGNuWnBZMlZoWTJOdmRXNTBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5dVlXMWxjM0JoWTJVaU9pSnljMmhwYm5raUxDSnJkV0psY201bGRHVnpMbWx2TDNObGNuWnBZMlZoWTJOdmRXNTBMM05sWTNKbGRDNXVZVzFsSWpvaVpHVndiRzk1WlhJdGRHOXJaVzR0Tm5Cd2FtZ2lMQ0pyZFdKbGNtNWxkR1Z6TG1sdkwzTmxjblpwWTJWaFkyTnZkVzUwTDNObGNuWnBZMlV0WVdOamIzVnVkQzV1WVcxbElqb2laR1Z3Ykc5NVpYSWlMQ0pyZFdKbGNtNWxkR1Z6TG1sdkwzTmxjblpwWTJWaFkyTnZkVzUwTDNObGNuWnBZMlV0WVdOamIzVnVkQzUxYVdRaU9pSTVaRGd5TkRRNE1pMDNZV1UxTFRFeFpUa3RPV1JsWVMweE5qVm1NelV6TXpVeFlqZ2lMQ0p6ZFdJaU9pSnplWE4wWlcwNmMyVnlkbWxqWldGalkyOTFiblE2Y25Ob2FXNTVPbVJsY0d4dmVXVnlJbjAuaXZNN0FOUkxqWkxVYlJnUS1nZjlpZWl0ekQ4VmhBLVJlYWU2MklvdFBIeGU0YmVGN1JDSnNQa1dZazVJU18zejk1cHFyYTFjSE9LeWVnWHVGeElWaUxlYllwOVhkYnBkZ0J5d0diNzhZZ0V1c3p5ZUxZajc5WGdNRGhBNzc1QUZrc2JVMXg1UjZleTR4WV9vOFotS0dfbDZzT0hzMmdaT1dKYjRaZTdYUmVVeENPanQwSkZqbDhUVGlKVFZHdndEcGp3TzlIMjlNMWVGZm1Hb2VYRXJXZElwU1pXLVNMME5KUUthUDAyRWdLT3R6MWV4WnpiUU5nWl92dVFBUE1XaDRvc3plVWdFZEVkYVNZNDM5WVpQc1dyMGx1NE84SEEzTVBOZ2QwY2pyS3Itam1QY1JFMGtuYzR0ZHR4M3Ezb3M4cWd1MnZLT3c2Sk1aZTF0bkl0aXln"
+            },
+            "kind": "Secret",
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "openshift.io/create-dockercfg-secrets",
+                    "kubernetes.io/service-account.name": "deployer",
+                    "kubernetes.io/service-account.uid": "9d824482-7ae5-11e9-9dea-165f353351b8"
+                },
+                "creationTimestamp": "2019-05-20T09:57:02Z",
+                "name": "deployer-token-6ppjh",
+                "namespace": "rshiny",
+                "resourceVersion": "162877",
+                "selfLink": "/api/v1/namespaces/rshiny/secrets/deployer-token-6ppjh",
+                "uid": "9d8c4d5c-7ae5-11e9-9dea-165f353351b8"
+            },
+            "type": "kubernetes.io/service-account-token"
+        },
+        {
+            "apiVersion": "v1",
+            "data": {
+                "ca.crt": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFtTVNRd0lnWURWUVFEREJ0dmNHVnUKYzJocFpuUXRjMmxuYm1WeVFERTFOVGM0TnpneE9UUXdIaGNOTVRrd05URTBNak0xTmpNMFdoY05NalF3TlRFeQpNak0xTmpNMVdqQW1NU1F3SWdZRFZRUUREQnR2Y0dWdWMyaHBablF0YzJsbmJtVnlRREUxTlRjNE56Z3hPVFF3CmdnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURFOGFjcE8vT2dKVC9WRE5JUnY3bnMKSTNFWU5QN3ZVeFV5T3FQNTBQbDJ5M04vVGwrNVplTHJVcWpodFZyd3MzYXdvTkZpNlpzRTlOYVJKSXNHcjgvRwpZbFc3bnpjY0ZxamhkbldCNHJuY3NUd0FxWHdXa3ROZW4veGpIN1BsZWtDbXhiN1dFZDVIbVUwc1VSb2FFWmEwCmZvZ3pRbC9MUC9WUVlzbjNJWTFEQW9ndVhsMXNVamlqbm9hMmpiejlLb0N0LzJ2c2cxZG5wY2lOYXErSzlSSUYKeFNvWXhFMm9ybFpOQUY4TXlSMnNwVGNpRUsvWnJ4R3dBc3dRUkh2WlgxcHI1cXVqSzNQUzNXQnF0RS9FY3NtaAp6b0VFdVpyUnhPN1VBUmRuSUYvVnl1RFBrZUhSaDZQMVRaYVNZQ2xMNHNVYWxBcXIrdnp1c3NiVzlEalpNV2FoCkFnTUJBQUdqSXpBaE1BNEdBMVVkRHdFQi93UUVBd0lDcERBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQXdZRXJYUnBCU2cvVVZFVzhuUGpjN3Z4SXJNRlBVVDh6dXo1UlJidU1qdk81UwpJd0ZkWWRML0VYNlBBR3ZUTTcvRitjTk92d0FSL09JUkZrU3ZocWpoUFEvQi84MG9mWUhWR0cyeUNud3I5YndNCmxyUEVXajhhTFgvVGxzbk1kbVAxSk5ueXFiQXhhY3B2YU5kRkJObE0rUFQ2WWZEVEh6d0swZ2FGdVVWcmhxU20KUk1FeGhodGx3WG1Qak5lUG1wOXcrcEJzSHdWQ0FvdmJSNHVzdnBuTGVqb0NISG9ETEUxVzJ6T0I0eU9sNEFvUwpRYmZBS3Jicy9MN1RQb2UyRVJRR3NEUllmRUJ2ZjNwTFBFMUFrcUh3YkNoYWNpcXA2djJOcUFJc24xWFRQTnk1CjVPZ20raEZoWTJaSFpiRXNycHpvdnZHVUl5ZEJGTVBNd21VRWhNcE0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+                "namespace": "cnNoaW55",
+                "service-ca.crt": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREFtTVNRd0lnWURWUVFEREJ0dmNHVnUKYzJocFpuUXRjMmxuYm1WeVFERTFOVGM0TnpneE9UUXdIaGNOTVRrd05URTBNak0xTmpNMFdoY05NalF3TlRFeQpNak0xTmpNMVdqQW1NU1F3SWdZRFZRUUREQnR2Y0dWdWMyaHBablF0YzJsbmJtVnlRREUxTlRjNE56Z3hPVFF3CmdnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURFOGFjcE8vT2dKVC9WRE5JUnY3bnMKSTNFWU5QN3ZVeFV5T3FQNTBQbDJ5M04vVGwrNVplTHJVcWpodFZyd3MzYXdvTkZpNlpzRTlOYVJKSXNHcjgvRwpZbFc3bnpjY0ZxamhkbldCNHJuY3NUd0FxWHdXa3ROZW4veGpIN1BsZWtDbXhiN1dFZDVIbVUwc1VSb2FFWmEwCmZvZ3pRbC9MUC9WUVlzbjNJWTFEQW9ndVhsMXNVamlqbm9hMmpiejlLb0N0LzJ2c2cxZG5wY2lOYXErSzlSSUYKeFNvWXhFMm9ybFpOQUY4TXlSMnNwVGNpRUsvWnJ4R3dBc3dRUkh2WlgxcHI1cXVqSzNQUzNXQnF0RS9FY3NtaAp6b0VFdVpyUnhPN1VBUmRuSUYvVnl1RFBrZUhSaDZQMVRaYVNZQ2xMNHNVYWxBcXIrdnp1c3NiVzlEalpNV2FoCkFnTUJBQUdqSXpBaE1BNEdBMVVkRHdFQi93UUVBd0lDcERBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQXdZRXJYUnBCU2cvVVZFVzhuUGpjN3Z4SXJNRlBVVDh6dXo1UlJidU1qdk81UwpJd0ZkWWRML0VYNlBBR3ZUTTcvRitjTk92d0FSL09JUkZrU3ZocWpoUFEvQi84MG9mWUhWR0cyeUNud3I5YndNCmxyUEVXajhhTFgvVGxzbk1kbVAxSk5ueXFiQXhhY3B2YU5kRkJObE0rUFQ2WWZEVEh6d0swZ2FGdVVWcmhxU20KUk1FeGhodGx3WG1Qak5lUG1wOXcrcEJzSHdWQ0FvdmJSNHVzdnBuTGVqb0NISG9ETEUxVzJ6T0I0eU9sNEFvUwpRYmZBS3Jicy9MN1RQb2UyRVJRR3NEUllmRUJ2ZjNwTFBFMUFrcUh3YkNoYWNpcXA2djJOcUFJc24xWFRQTnk1CjVPZ20raEZoWTJaSFpiRXNycHpvdnZHVUl5ZEJGTVBNd21VRWhNcE0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQoKLS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURDakNDQWZLZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBREEyTVRRd01nWURWUVFEREN0dmNHVnUKYzJocFpuUXRjMlZ5ZG1salpTMXpaWEoyYVc1bkxYTnBaMjVsY2tBeE5UVTNPRGM0TVRrMU1CNFhEVEU1TURVeApOREl6TlRZek5Wb1hEVEkwTURVeE1qSXpOVFl6Tmxvd05qRTBNRElHQTFVRUF3d3JiM0JsYm5Ob2FXWjBMWE5sCmNuWnBZMlV0YzJWeWRtbHVaeTF6YVdkdVpYSkFNVFUxTnpnM09ERTVOVENDQVNJd0RRWUpLb1pJaHZjTkFRRUIKQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUNCR1NhdGhwVzB2ekFYNzVYRXkxZ3RzTDNyVTFka0hJLzRoMW5CMTBldAoxa3lRRHhQMGVZamFBNXU5UnpZVkpjYkY0VHRmV093OGNrWFZHR2t0SlNiNVVJSGFBUTl5dHFENjVRUm1QNDFtCjNyaDFtV0Y3a3MvcFpsNUpDN3lhdk45TWtBR01IQk1COXovb0ZiWUxKVTFFc1ZLSW1ycFZPQVpGaTNVeUVLNHcKYmFoWlhGUWh1MWhreUZOZW9QbkVGZ1E5cDhDZjNJaEtMNHM5WUN3VE5HejFYYjJ4cTFoYnBlNURtK1dSYWEyVQpaaXE0VDJaNUlOVEM3UjhNb3NCLzAwaU5BUFFGV0xCd2RxUWNBa0hNWUsyeGZjcmd3ekpvakE0aFRUUzBrNzlXCjQyb1JCMFByTnBmMk5nMkFSMEVmS0ZEL3Q0OUljc0g5NmZhMjRrTmI3eGNDQXdFQUFhTWpNQ0V3RGdZRFZSMFAKQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCL3dRRk1BTUJBZjh3RFFZSktvWklodmNOQVFFTEJRQURnZ0VCQURNeQpMNjlPYVFxY1A5YWRZbWV5STNaNE9PRlJWV2xUeDJzOFNET0RYZTJTU1AyUGFEczJ6OFNyaHdJUGkxeXQvRUlVCnVsU3BtMGxvMnJ2MEdsLzN3eXMrM0Jhd2Z3cVlRYlI2eHArem11RXRTOWtHNm5EaXcwMXljQzd1T1hLN2NmNTUKNnhRcVZVNWovSm5HbFdkQUVzYnowRmdYazl6U3dDMzVEMDJpU3VuZGVYRGlDYUxwcnRBZytBWUtLemJyTUoxbAoxSHJkZ0dMTzk1QktFOEtQdjFSYSt2SWlkeW85MkkwN3ZYRks5cU8zK00reDhFbzVmSUw4aFlpcnZoSkowaDBsCm1PU0ZyY3plRUxpaGRvL2tKbE9HTVh2OEFOd2IzbjhMWlg5NTNVZGcrbkxydFA0SzBRbkNiRytlK0ExK2FTVVYKZ1VRT01ITWxPOXpSUHZkWWNobz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+                "token": "ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklpSjkuZXlKcGMzTWlPaUpyZFdKbGNtNWxkR1Z6TDNObGNuWnBZMlZoWTJOdmRXNTBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5dVlXMWxjM0JoWTJVaU9pSnljMmhwYm5raUxDSnJkV0psY201bGRHVnpMbWx2TDNObGNuWnBZMlZoWTJOdmRXNTBMM05sWTNKbGRDNXVZVzFsSWpvaVpHVndiRzk1WlhJdGRHOXJaVzR0Ym5kamJuUWlMQ0pyZFdKbGNtNWxkR1Z6TG1sdkwzTmxjblpwWTJWaFkyTnZkVzUwTDNObGNuWnBZMlV0WVdOamIzVnVkQzV1WVcxbElqb2laR1Z3Ykc5NVpYSWlMQ0pyZFdKbGNtNWxkR1Z6TG1sdkwzTmxjblpwWTJWaFkyTnZkVzUwTDNObGNuWnBZMlV0WVdOamIzVnVkQzUxYVdRaU9pSTVaRGd5TkRRNE1pMDNZV1UxTFRFeFpUa3RPV1JsWVMweE5qVm1NelV6TXpVeFlqZ2lMQ0p6ZFdJaU9pSnplWE4wWlcwNmMyVnlkbWxqWldGalkyOTFiblE2Y25Ob2FXNTVPbVJsY0d4dmVXVnlJbjAuamtpYlFmTFJDWWJ4eGNmWllNbWVFS1QwdjNWRkI5QlRRWVlzUUZzWllrXzA2VWxrZE9mUWVJeWJKLTRROEl6ZG1VQ1FFV1JOOGNUUmUtVHBLZkdhREZTeHROdlNWOWVvb1ZLeFkyUENQY0k5cTNqRmtlT0pKRFl1a0tWdFhMQnQ2QzE4QWZhdm9BUmcxaGI3djhIbmVzcWNnRUhTdjl6elN0ZmYwTXlweUtMb0I4bnZ2d1hFdEJXeWZTUmswWE9PSGRJQlNEOVlJbFRvVHFVTzhwYmJsSWxKVWNKYUFzUlEycXpldEpFMUt0UVhNSjk4cEgzeVgzRXFEVFNRU2VYVGxqLUdKMFpwNFVheXZyQmFXQ0FxX0dhS0l4bUpoanUxWE1wbXJvYkZjdWREMklOaDhTM0NFdWNzTHFEM0JPSmotV2N4V1hsVHdLTTJUYkpuQ0l1Z1BB"
+            },
+            "kind": "Secret",
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/service-account.name": "deployer",
+                    "kubernetes.io/service-account.uid": "9d824482-7ae5-11e9-9dea-165f353351b8"
+                },
+                "creationTimestamp": "2019-05-20T09:57:02Z",
+                "name": "deployer-token-nwcnt",
+                "namespace": "rshiny",
+                "resourceVersion": "162860",
+                "selfLink": "/api/v1/namespaces/rshiny/secrets/deployer-token-nwcnt",
+                "uid": "9d8688ea-7ae5-11e9-9dea-165f353351b8"
+            },
+            "type": "kubernetes.io/service-account-token"
+        },
+        {
+            "apiVersion": "v1",
+            "imagePullSecrets": [
+                {
+                    "name": "builder-dockercfg-sx56g"
+                }
+            ],
+            "kind": "ServiceAccount",
+            "metadata": {
+                "creationTimestamp": "2019-05-20T09:57:02Z",
+                "name": "builder",
+                "namespace": "rshiny",
+                "resourceVersion": "162878",
+                "selfLink": "/api/v1/namespaces/rshiny/serviceaccounts/builder",
+                "uid": "9d80f428-7ae5-11e9-9dea-165f353351b8"
+            },
+            "secrets": [
+                {
+                    "name": "builder-token-2vnb5"
+                },
+                {
+                    "name": "builder-dockercfg-sx56g"
+                }
+            ]
+        },
+        {
+            "apiVersion": "v1",
+            "imagePullSecrets": [
+                {
+                    "name": "default-dockercfg-r8k24"
+                }
+            ],
+            "kind": "ServiceAccount",
+            "metadata": {
+                "creationTimestamp": "2019-05-20T09:57:02Z",
+                "name": "default",
+                "namespace": "rshiny",
+                "resourceVersion": "162876",
+                "selfLink": "/api/v1/namespaces/rshiny/serviceaccounts/default",
+                "uid": "9d80b82e-7ae5-11e9-9dea-165f353351b8"
+            },
+            "secrets": [
+                {
+                    "name": "default-token-h7kqz"
+                },
+                {
+                    "name": "default-dockercfg-r8k24"
+                }
+            ]
+        },
+        {
+            "apiVersion": "v1",
+            "imagePullSecrets": [
+                {
+                    "name": "deployer-dockercfg-nzskn"
+                }
+            ],
+            "kind": "ServiceAccount",
+            "metadata": {
+                "creationTimestamp": "2019-05-20T09:57:02Z",
+                "name": "deployer",
+                "namespace": "rshiny",
+                "resourceVersion": "162880",
+                "selfLink": "/api/v1/namespaces/rshiny/serviceaccounts/deployer",
+                "uid": "9d824482-7ae5-11e9-9dea-165f353351b8"
+            },
+            "secrets": [
+                {
+                    "name": "deployer-token-nwcnt"
+                },
+                {
+                    "name": "deployer-dockercfg-nzskn"
+                }
+            ]
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": "",
+        "selfLink": ""
+    }
+}

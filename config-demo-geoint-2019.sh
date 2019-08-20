@@ -9,7 +9,7 @@
 #                                0     1        2        3          4      5            6               7                  8                   9         10        11 
 DEMO_TARGET_OPENSHIFT_INSTANCES=(local rhsademo rhtps-io fortnebula itpaas nsabine-vrtx dan-redhatgovio mepley-demo-redhatgovio geoint-redhatgovio  hattrick1 hattrick2 hattrick3)
 # Target GEOINT-REHATGOVIO
-DEMO_TARGET_OPENSHIFT_INSTANCE=${DEMO_TARGET_OPENSHIFT_INSTANCES[8]}
+#DEMO_TARGET_OPENSHIFT_INSTANCE=${DEMO_TARGET_OPENSHIFT_INSTANCES[8]}
 # Target MEPLEY-DEMO-REHATGOVIO
 DEMO_TARGET_OPENSHIFT_INSTANCE=${DEMO_TARGET_OPENSHIFT_INSTANCES[7]}
 
